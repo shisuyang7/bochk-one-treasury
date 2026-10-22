@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BOCHK One Treasury · 统一资金管理平台</title>
+<title>BOCHK One Treasury · 統一資金管理平台</title>
 <style>
 :root{
   --bg:#eef1f7;
@@ -49,7 +49,7 @@ body::before{
   background-size:auto,auto,auto,64px 64px,64px 64px;
 }
 
-/* ================= 顶栏 ================= */
+/* ================= 頂欄 ================= */
 .topbar{
   position:sticky;top:0;z-index:20;
   display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
@@ -101,7 +101,7 @@ body::before{
   font-weight:600;
 }
 
-/* ================= 主布局：左 / 中 / 右 ================= */
+/* ================= 主佈局：左 / 中 / 右 ================= */
 .content{
   position:relative;z-index:1;
   display:grid;
@@ -120,7 +120,7 @@ body::before{
   min-width:0;overflow:hidden;
   box-shadow:0 3px 14px rgba(23,32,58,.07);
 }
-/* 重点区域面板：更醒目的标题与红金标识 */
+/* 重點區域面板：更醒目的標題與紅金標識 */
 .panel.featured{
   border-top:3px solid transparent;
   border-image:linear-gradient(90deg,#C8102E,#E0A83C) 1;
@@ -153,7 +153,7 @@ body::before{
 .panel-hd .sub{font-size:11px;color:var(--muted);margin-top:2px;line-height:1.5}
 .panel-bd{padding:12px 16px 14px;flex:1;min-height:0}
 
-/* ================= 品牌主标题 ================= */
+/* ================= 品牌主標題 ================= */
 .home-hero{display:flex;align-items:center;gap:16px;padding:2px 4px 6px}
 .hero-logo{
   height:54px;background:#fff;border-radius:11px;padding:5px;flex-shrink:0;
@@ -169,7 +169,7 @@ body::before{
 }
 .hero-sub{font-size:12px;color:var(--muted);margin-top:5px;letter-spacing:.16em}
 @media (prefers-reduced-motion:reduce){.hero-title{animation:none}}
-/* 全体系账户统计 */
+/* 全體系賬户統計 */
 .acc-stats{display:flex;gap:10px;padding:12px 16px 0}
 .acc-stat{
   flex:1;background:var(--surface-2);border:1px solid var(--hairline);
@@ -177,7 +177,7 @@ body::before{
 }
 .acc-stat b{display:block;font-size:19px;font-weight:700;color:#C8102E;font-variant-numeric:tabular-nums}
 .acc-stat span{font-size:10px;color:var(--muted)}
-/* 跨行归集 */
+/* 跨行歸集 */
 .sweep-stats{display:flex;gap:10px}
 .sweep-stat{
   flex:1;background:var(--surface-2);border:1px solid var(--hairline);
@@ -198,7 +198,7 @@ body::before{
 .sweep-row:last-child{border-bottom:none}
 .sweep-row .rt{color:var(--ink-2);flex:1;white-space:nowrap}
 .sweep-row .ramt{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:500}
-/* 跨行归集流程图（主视觉） */
+/* 跨行歸集流程圖（主視覺） */
 .sweep-flow{display:flex;align-items:stretch;gap:22px;margin-top:16px}
 .sf-hub{
   width:170px;flex-shrink:0;
@@ -244,7 +244,7 @@ body::before{
   .sf-targets{grid-template-columns:repeat(2,1fr)}
 }
 
-/* 资金监控流向 */
+/* 資金監控流向 */
 .flow-strip{
   display:flex;gap:8px;margin:12px 16px 0;
 }
@@ -257,7 +257,7 @@ body::before{
 .flow-strip .v.up{color:var(--good)}
 .flow-strip .v.down{color:var(--crit)}
 
-/* ================= 三块核心指标 ================= */
+/* ================= 三塊核心指標 ================= */
 .tiles3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .tile{
   background:linear-gradient(180deg, #ffffff, #fbfcfe 60%), var(--surface);
@@ -281,7 +281,7 @@ body::before{
 .chg.up{color:var(--good)} .chg.down{color:var(--crit)}
 .tile .delta .vs{color:var(--muted)}
 
-/* ================= 地图 ================= */
+/* ================= 地圖 ================= */
 .map-wrap{position:relative;flex:1;padding:6px 10px 8px}
 .map-wrap svg{width:100%;height:auto;display:block}
 .map-legend{
@@ -293,7 +293,7 @@ body::before{
 .map-legend .d2{width:6px;height:6px;border-radius:50%;background:var(--ink-2)}
 .map-legend .ln{width:16px;height:0;border-top:1px dashed rgba(224,43,63,.7)}
 .map-legend .cn{width:10px;height:8px;border-radius:2px;background:rgba(240,180,41,.35);border:1px solid #F0B429}
-/* 放大镜控件 */
+/* 放大鏡控件 */
 .map-slogan{
   position:absolute;top:12px;left:14px;z-index:6;pointer-events:none;
   font-size:13px;font-weight:800;font-style:italic;letter-spacing:.14em;
@@ -399,7 +399,7 @@ body::before{
   .arc .flow,.hub .pulse-ring,.radar{animation:none}
 }
 
-/* ================= 左列：存款分布 ================= */
+/* ================= 左列：存款分佈 ================= */
 .bar-list{display:flex;flex-direction:column;gap:10px;padding:2px 0}
 .bar-row{display:grid;grid-template-columns:86px 1fr 108px;align-items:center;gap:8px}
 .bar-row .bn{font-size:11.5px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -409,7 +409,7 @@ body::before{
 .bar-row.total .bn{color:var(--ink);font-weight:600}
 .bar-row.total .track{background:transparent;border-top:1px solid var(--axis)}
 .bar-row.total .fill{background:linear-gradient(90deg,#C8102E,#E0566A)}
-/* 饼图（银行存款分布） */
+/* 餅圖（銀行存款分佈） */
 .pie-wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
 .pie-wrap svg{width:190px;height:190px;display:block}
 .pie-slice{transition:opacity .15s,filter .15s;cursor:pointer}
@@ -425,7 +425,7 @@ body::before{
 .pie-legend .amt{font-size:10.5px;font-variant-numeric:tabular-nums;color:var(--ink);font-weight:500;white-space:nowrap}
 .pie-legend .pct{font-variant-numeric:tabular-nums;color:var(--muted);width:36px;text-align:right;white-space:nowrap}
 
-/* ================= 收入支出柱状图 ================= */
+/* ================= 收入支出柱狀圖 ================= */
 .chart-svg{width:100%;height:auto;display:block}
 .grid-line{stroke:var(--grid);stroke-width:1}
 .axis-line{stroke:var(--axis);stroke-width:1}
@@ -477,7 +477,7 @@ td .sub{color:var(--muted);font-size:10px}
 .panel .more a:hover{text-decoration:underline}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 
-/* ================= 右列：预警 ================= */
+/* ================= 右列：預警 ================= */
 .expo-strip{
   display:flex;justify-content:space-between;align-items:center;
   background:rgba(224,43,63,.08);border:1px solid rgba(224,43,63,.25);
@@ -505,7 +505,7 @@ td .sub{color:var(--muted);font-size:10px}
 .alert-item .dsc{font-size:11px;color:var(--muted);margin-top:2.5px;line-height:1.45}
 .alert-item .time{font-size:10px;color:var(--muted);margin-top:4px;opacity:.8}
 
-/* ================= 右列：融资构成 ================= */
+/* ================= 右列：融資構成 ================= */
 .fin-stack{position:relative;height:26px;border-radius:6px;overflow:hidden;display:flex;gap:2px}
 .fin-stack .seg{height:100%;border-radius:3px;transition:filter .15s}
 .fin-stack .seg:hover{filter:brightness(1.25)}
@@ -536,7 +536,7 @@ td .sub{color:var(--muted);font-size:10px}
 #tooltip .row{display:flex;justify-content:space-between;gap:14px;color:var(--muted);line-height:1.7}
 #tooltip .row b{color:var(--ink-2);font-weight:500;font-variant-numeric:tabular-nums}
 
-/* ================= 登录页 ================= */
+/* ================= 登錄頁 ================= */
 #loginScreen{
   position:fixed;inset:0;z-index:200;
   background:
@@ -612,11 +612,11 @@ td .sub{color:var(--muted);font-size:10px}
 .login-hint{margin-top:10px;font-size:10.5px;color:var(--muted);text-align:center;line-height:1.6}
 .login-hint b{color:var(--ink-2);font-weight:500}
 
-/* ================= 页面切换 ================= */
+/* ================= 頁面切換 ================= */
 .content.page{display:none}
 .content.page.active{display:grid}
 
-/* ================= 东南亚黄色框 ================= */
+/* ================= 東南亞黃色框 ================= */
 .sea-frame{
   fill:rgba(240,180,41,.06);
   stroke:#F0B429;
@@ -636,13 +636,13 @@ td .sub{color:var(--muted);font-size:10px}
   pointer-events:none;
 }
 
-/* ================= 页面头部 ================= */
+/* ================= 頁面頭部 ================= */
 .page-head2{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:2px}
 .page-head2 h1{font-size:18px;font-weight:600;letter-spacing:.02em}
 .page-head2 p{font-size:11.5px;color:var(--muted);margin-top:3px}
 .page-head2 .meta{font-size:11px;color:var(--muted)}
 
-/* ================= 账户/数据表格 ================= */
+/* ================= 賬户/數據表格 ================= */
 .cur-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 .cur-tile{
   background:var(--surface);border:1px solid var(--hairline);border-radius:12px;
@@ -681,7 +681,7 @@ td .sub{color:var(--muted);font-size:10px}
 }
 .bank-grp td .bk .sub{display:block;font-size:10px;color:var(--muted);font-weight:400;margin-top:1px}
 
-/* ================= 响应式 ================= */
+/* ================= 響應式 ================= */
 @media (max-width:1380px){
   .content{grid-template-columns:1fr;max-width:980px}
   .topnav a{padding:7px 10px}
@@ -694,56 +694,56 @@ td .sub{color:var(--muted);font-size:10px}
 </style>
 </head>
 <body>
-<!-- ==================== 登录页 ==================== -->
+<!-- ==================== 登錄頁 ==================== -->
 <div id="loginScreen">
   <div class="login-card">
     <div class="login-logo">
-      <img class="boc-logo" src="BOCHK图片.jpg" alt="中银香港 BOCHK">
+      <img class="boc-logo" src="BOCHK圖片.jpg" alt="中銀香港 BOCHK">
     </div>
     <div class="login-title">BOCHK One Treasury</div>
-    <div class="login-sub">统一资金管理平台 · UNIFIED TREASURY</div>
+    <div class="login-sub">統一資金管理平台 · UNIFIED TREASURY</div>
 
     <div class="token-box">
-      <span class="token-cap">统一保安编码器</span>
+      <span class="token-cap">統一保安編碼器</span>
       <span class="token-code" id="tokenCode">------</span>
       <div class="token-bar"><i id="tokenBar"></i></div>
     </div>
 
     <div class="login-field">
-      <label>保安编码器账号</label>
-      <input type="text" id="loginUser" placeholder="请输入保安编码器账号" autocomplete="username">
+      <label>保安編碼器賬號</label>
+      <input type="text" id="loginUser" placeholder="請輸入保安編碼器賬號" autocomplete="username">
     </div>
     <div class="login-field">
-      <label>保安编码</label>
-      <input type="text" id="loginToken" placeholder="请输入编码器上显示的 6 位数字" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
+      <label>保安編碼</label>
+      <input type="text" id="loginToken" placeholder="請輸入編碼器上顯示的 6 位數字" maxlength="6" inputmode="numeric" autocomplete="one-time-code">
     </div>
     <div class="login-field">
-      <label>密码</label>
-      <input type="password" id="loginPass" placeholder="请输入密码" autocomplete="current-password">
+      <label>密碼</label>
+      <input type="password" id="loginPass" placeholder="請輸入密碼" autocomplete="current-password">
     </div>
     <button class="login-btn" id="loginBtn">登 入</button>
     <div class="login-err" id="loginErr"></div>
-    <div class="login-hint">演示环境 · 密码 <b>123456</b> · 保安编码请对照编码器实时显示输入</div>
+    <div class="login-hint">演示環境 · 密碼 <b>123456</b> · 保安編碼請對照編碼器實時顯示輸入</div>
   </div>
 </div>
 
-<!-- ==================== 顶栏 ==================== -->
+<!-- ==================== 頂欄 ==================== -->
 <header class="topbar">
   <span class="clock" id="clock">--</span>
   <div class="brand-box">
-    <span class="brand-icon" title="中银香港 BOCHK"><img src="BOCHK图片.jpg" alt="BOCHK"></span>
+    <span class="brand-icon" title="中銀香港 BOCHK"><img src="BOCHK圖片.jpg" alt="BOCHK"></span>
     <h1 class="brand-title">BOCHK One Treasury</h1>
-    <div class="brand-sub">全球司库管理驾驶舱</div>
+    <div class="brand-sub">全球司庫管理駕駛艙</div>
   </div>
   <div class="top-right">
     <nav class="topnav">
-      <a class="active" data-page="home">首页</a>
-      <a data-page="accounts">账户类</a>
-      <a data-page="deposits">存款类</a>
-      <a data-page="settlement">结算类</a>
-      <a data-page="financing">融资类</a>
+      <a class="active" data-page="home">首頁</a>
+      <a data-page="accounts">賬户類</a>
+      <a data-page="deposits">存款類</a>
+      <a data-page="settlement">結算類</a>
+      <a data-page="financing">融資類</a>
     </nav>
-    <button id="logoutBtn" class="logout-btn" title="退出系统，重新登录">
+    <button id="logoutBtn" class="logout-btn" title="退出系統，重新登錄">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
       退出
     </button>
@@ -758,14 +758,14 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">All Accounts</div>
-          <h2>全球账户总览</h2>
-          <div class="sub">多银行、多账户、多币种、跨行可视</div>
+          <h2>全球賬户總覽</h2>
+          <div class="sub">多銀行、多賬户、多幣種、跨行可視</div>
         </div>
       </div>
       <div class="acc-stats">
-        <div class="acc-stat"><b>8</b><span>银行</span></div>
-        <div class="acc-stat"><b>27</b><span>账户</span></div>
-        <div class="acc-stat"><b>5</b><span>币种</span></div>
+        <div class="acc-stat"><b>N</b><span>家銀行</span></div>
+        <div class="acc-stat"><b>N</b><span>個賬户</span></div>
+        <div class="acc-stat"><b>N</b><span>種幣種</span></div>
       </div>
       <div class="panel-bd" id="bankWrap"></div>
     </div>
@@ -774,8 +774,8 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">Corporate Deposits</div>
-          <h2>单位存款分布</h2>
-          <div class="sub">按成员单位 · 集团归集账户</div>
+          <h2>單位存款分佈</h2>
+          <div class="sub">按成員單位 · 集團歸集賬户</div>
         </div>
       </div>
       <div class="panel-bd bar-list" id="unitList"></div>
@@ -784,143 +784,143 @@ td .sub{color:var(--muted);font-size:10px}
 
   <!-- ==================== 中列 ==================== -->
   <section class="col-mid">
-    <!-- 品牌主标题 -->
+    <!-- 品牌主標題 -->
     <div class="home-hero">
-      <img class="hero-logo" src="BOCHK图片.jpg" alt="中银香港 BOCHK">
+      <img class="hero-logo" src="BOCHK圖片.jpg" alt="中銀香港 BOCHK">
       <div>
         <h1 class="hero-title">BOCHK ONE TREASURY</h1>
-        <p class="hero-sub">全球司库管理驾驶舱 · 全体系账户 · 跨行归集 · 资金监控</p>
+        <p class="hero-sub">全球司庫管理駕駛艙 · 全體系賬户 · 跨行歸集 · 資金監控</p>
       </div>
     </div>
 
-    <!-- 三块核心指标 -->
+    <!-- 三塊核心指標 -->
     <div class="tiles3">
       <div class="tile">
         <div class="lbl">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-          总收入
+          總收入
         </div>
         <div class="val" style="font-size:21px">HK$186,000,000</div>
-        <div class="delta"><span class="chg up">▲ +8.4%</span><span class="vs">较上月</span></div>
+        <div class="delta"><span class="chg up">▲ +8.4%</span><span class="vs">較上月</span></div>
       </div>
       <div class="tile">
         <div class="lbl">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 14h.01M12 14h4"/></svg>
-          总余额
+          總餘額
         </div>
         <div class="val" style="font-size:21px">HK$98,600,000</div>
-        <div class="delta"><span class="chg up">▲ +2.4%</span><span class="vs">较上月</span></div>
+        <div class="delta"><span class="chg up">▲ +2.4%</span><span class="vs">較上月</span></div>
       </div>
       <div class="tile">
         <div class="lbl">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-          总支出
+          總支出
         </div>
         <div class="val" style="font-size:21px">HK$135,000,000</div>
-        <div class="delta"><span class="chg down">▼ -3.1%</span><span class="vs">较上月</span></div>
+        <div class="delta"><span class="chg down">▼ -3.1%</span><span class="vs">較上月</span></div>
       </div>
     </div>
 
-    <!-- 地图 -->
+    <!-- 地圖 -->
     <div class="panel">
       <div class="panel-hd">
         <div>
           <div class="kicker">Global Cash Network</div>
-          <h2>全球资金动态概览</h2>
-          <div class="sub">中国大陆与东南亚以黄色描出边界 · 香港为资金枢纽</div>
+          <h2>全球資金動態概覽</h2>
+          <div class="sub">中國大陸與東南亞以黃色描出邊界 · 香港為資金樞紐</div>
         </div>
         <div class="map-zoom">
-          <button id="zoomSea" class="zoom-btn" title="放大镜：查看东南亚分行">🔍 放大镜 · 东南亚</button>
-          <button id="zoomReset" class="zoom-btn on" title="返回全局视图">⟳ 全局视图</button>
+          <button id="zoomSea" class="zoom-btn" title="放大鏡：查看東南亞分行">🔍 放大鏡 · 東南亞</button>
+          <button id="zoomReset" class="zoom-btn on" title="返回全局視圖">⟳ 全局視圖</button>
         </div>
       </div>
       <div class="map-wrap" id="mapWrap">
-        <div class="map-slogan">一点接入 · 全球跨行可视</div>
+        <div class="map-slogan">一點接入 · 全球跨行可視</div>
       </div>
       <div class="map-legend">
-        <span class="li"><span class="d1"></span>香港资金枢纽</span>
-        <span class="li"><span class="d2"></span>资金中心</span>
-        <span class="li"><span class="cn"></span>中国大陆（黄色边界）</span>
-        <span class="li"><span style="width:12px;height:9px;border:1px solid #F0B429;border-radius:3px;background:rgba(240,180,41,.18)"></span>东南亚（黄色边界）</span>
-        <span class="li"><span class="ln"></span>资金归集 / 划拨流向</span>
+        <span class="li"><span class="d1"></span>香港資金樞紐</span>
+        <span class="li"><span class="d2"></span>資金中心</span>
+        <span class="li"><span class="cn"></span>中國大陸（黃色邊界）</span>
+        <span class="li"><span style="width:12px;height:9px;border:1px solid #F0B429;border-radius:3px;background:rgba(240,180,41,.18)"></span>東南亞（黃色邊界）</span>
+        <span class="li"><span class="ln"></span>資金歸集 / 劃撥流向</span>
       </div>
     </div>
 
-    <!-- 跨行归集（主视觉） -->
+    <!-- 跨行歸集（主視覺） -->
     <div class="panel featured">
       <div class="panel-hd">
         <div>
           <div class="kicker">Global Liquidity Management</div>
-          <h2>全球资金池流动性管理</h2>
-          <div class="sub">一点接入，自动化处理，灵活调度</div>
+          <h2>全球資金池流動性管理</h2>
+          <div class="sub">一點接入，自動化處理，靈活調度</div>
         </div>
-        <span style="font-size:11px;color:var(--muted);margin-top:2px">T+0 自动归集</span>
+        <span style="font-size:11px;color:var(--muted);margin-top:2px">T+0 自動歸集</span>
       </div>
       <div class="panel-bd">
         <div class="sweep-stats">
           <div class="sweep-stat">
-            <span class="k">今日归集</span>
+            <span class="k">今日歸集</span>
             <span class="v">HK$6,200,000</span>
           </div>
           <div class="sweep-stat">
-            <span class="k">执行率</span>
+            <span class="k">執行率</span>
             <span class="v">98.6%</span>
           </div>
           <div class="sweep-stat">
-            <span class="k">在途资金</span>
+            <span class="k">在途資金</span>
             <span class="v">HK$850,000</span>
           </div>
           <div class="sweep-stat">
-            <span class="k">本年累计归集</span>
+            <span class="k">本年累計歸集</span>
             <span class="v">HK$920,000,000</span>
           </div>
         </div>
         <div class="sweep-flow">
           <div class="sf-hub">
             <span class="sf-ico">HK</span>
-            <img class="hub-logo" src="BOCHK图片.jpg" alt="BOCHK">
-            <b>香港总部</b>
-            <small>资金池 HK$98,600,000</small>
-            <small class="sf-pool">中银香港主账户</small>
+            <img class="hub-logo" src="BOCHK圖片.jpg" alt="BOCHK">
+            <b>香港總部</b>
+            <small>資金池 HK$98,600,000</small>
+            <small class="sf-pool">中銀香港主賬户</small>
           </div>
           <div class="sf-targets">
             <div class="sf-card"><span class="ct">北京</span><span class="amt">HK$1,800,000</span><span class="chip done"><i></i>已完成</span></div>
             <div class="sf-card"><span class="ct">新加坡</span><span class="amt">HK$1,400,000</span><span class="chip proc"><i></i>在途</span></div>
-            <div class="sf-card"><span class="ct">东京</span><span class="amt">HK$700,000</span><span class="chip done"><i></i>已完成</span></div>
-            <div class="sf-card"><span class="ct">伦敦</span><span class="amt">HK$550,000</span><span class="chip done"><i></i>已完成</span></div>
-            <div class="sf-card"><span class="ct">迪拜</span><span class="amt">HK$400,000</span><span class="chip wait"><i></i>待归集</span></div>
+            <div class="sf-card"><span class="ct">東京</span><span class="amt">HK$700,000</span><span class="chip done"><i></i>已完成</span></div>
+            <div class="sf-card"><span class="ct">倫敦</span><span class="amt">HK$550,000</span><span class="chip done"><i></i>已完成</span></div>
+            <div class="sf-card"><span class="ct">迪拜</span><span class="amt">HK$400,000</span><span class="chip wait"><i></i>待歸集</span></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 交易明细 -->
+    <!-- 交易明細 -->
     <div class="panel">
       <div class="panel-hd">
         <div>
           <div class="kicker">Transactions</div>
-          <h2>交易明细</h2>
+          <h2>交易明細</h2>
         </div>
-        <span style="font-size:11px;color:var(--muted);margin-top:2px">今日累计 128 笔</span>
+        <span style="font-size:11px;color:var(--muted);margin-top:2px">今日累計 128 筆</span>
       </div>
       <div class="panel-bd" style="padding-top:6px;overflow-x:auto">
         <table>
           <thead>
-            <tr><th>时间</th><th>流水号</th><th>类型</th><th>对手方</th><th>币种</th><th class="num">金额</th><th>状态</th></tr>
+            <tr><th>時間</th><th>流水號</th><th>類型</th><th>對手方</th><th>幣種</th><th class="num">金額</th><th>狀態</th></tr>
           </thead>
           <tbody>
-            <tr><td>09:42</td><td class="num" style="color:var(--muted)">T20260706-0842</td><td>收款</td><td>中银香港 · 大湾区贸易结算</td><td>HKD</td><td class="num amt-in">+HK$1,250,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>09:15</td><td class="num" style="color:var(--muted)">T20260706-0915</td><td>付款</td><td>华为技术有限公司</td><td>CNY</td><td class="num amt-out">-HK$850,000</td><td><span class="chip proc"><i></i>处理中</span></td></tr>
-            <tr><td>08:56</td><td class="num" style="color:var(--muted)">T20260706-0856</td><td>结汇</td><td>美元 → 人民币（花旗）</td><td>USD</td><td class="num amt-out">-US$200,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>昨日 17:30</td><td class="num" style="color:var(--muted)">T20260705-1730</td><td>付款</td><td>新加坡分公司 · 运营周转</td><td>SGD</td><td class="num amt-out">-S$185,000</td><td><span class="chip wait"><i></i>待审批</span></td></tr>
-            <tr><td>昨日 16:42</td><td class="num" style="color:var(--muted)">T20260705-1642</td><td>收款</td><td>伦敦客户 · 汇丰（伦敦）</td><td>GBP</td><td class="num amt-in">+£36,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>昨日 15:08</td><td class="num" style="color:var(--muted)">T20260705-1508</td><td>投资</td><td>国债逆回购（7 天）</td><td>CNY</td><td class="num amt-out">-HK$3,000,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>昨日 11:24</td><td class="num" style="color:var(--muted)">T20260705-1124</td><td>付款</td><td>深圳物流供应商</td><td>CNY</td><td class="num amt-out">-HK$68,000</td><td><span class="chip fail"><i></i>已失败</span></td></tr>
+            <tr><td>09:42</td><td class="num" style="color:var(--muted)">T20260706-0842</td><td>收款</td><td>中銀香港 · 大灣區貿易結算</td><td>HKD</td><td class="num amt-in">+HK$1,250,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>09:15</td><td class="num" style="color:var(--muted)">T20260706-0915</td><td>付款</td><td>華為技術有限公司</td><td>CNY</td><td class="num amt-out">-HK$850,000</td><td><span class="chip proc"><i></i>處理中</span></td></tr>
+            <tr><td>08:56</td><td class="num" style="color:var(--muted)">T20260706-0856</td><td>結匯</td><td>美元 → 人民幣（花旗）</td><td>USD</td><td class="num amt-out">-US$200,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>昨日 17:30</td><td class="num" style="color:var(--muted)">T20260705-1730</td><td>付款</td><td>新加坡分公司 · 運營週轉</td><td>SGD</td><td class="num amt-out">-S$185,000</td><td><span class="chip wait"><i></i>待審批</span></td></tr>
+            <tr><td>昨日 16:42</td><td class="num" style="color:var(--muted)">T20260705-1642</td><td>收款</td><td>倫敦客户 · 滙豐（倫敦）</td><td>GBP</td><td class="num amt-in">+£36,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>昨日 15:08</td><td class="num" style="color:var(--muted)">T20260705-1508</td><td>投資</td><td>國債逆回購（7 天）</td><td>CNY</td><td class="num amt-out">-HK$3,000,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>昨日 11:24</td><td class="num" style="color:var(--muted)">T20260705-1124</td><td>付款</td><td>深圳物流供應商</td><td>CNY</td><td class="num amt-out">-HK$68,000</td><td><span class="chip fail"><i></i>已失敗</span></td></tr>
           </tbody>
         </table>
       </div>
       <div class="more">
-        <span>数据来源：SWIFT / 银企直连 · 已对账</span>
+        <span>數據來源：SWIFT / 銀企直連 · 已對賬</span>
         <a>查看全部流水 →</a>
       </div>
     </div>
@@ -932,52 +932,52 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">Global Transaction Monitoring</div>
-          <h2>全球交易监控</h2>
-          <div class="sub">实时预警、敞口管理、风险可控</div>
+          <h2>全球交易監控</h2>
+          <div class="sub">實時預警、敞口管理、風險可控</div>
         </div>
-        <span style="font-size:11px;color:var(--muted);margin-top:2px">4 条待处理</span>
+        <span style="font-size:11px;color:var(--muted);margin-top:2px">4 條待處理</span>
       </div>
       <div class="flow-strip">
         <div class="fs"><span class="k">今日流入</span><span class="v up">+HK$12,800,000</span></div>
         <div class="fs"><span class="k">今日流出</span><span class="v down">-HK$9,900,000</span></div>
-        <div class="fs"><span class="k">净额</span><span class="v up">+HK$2,900,000</span></div>
+        <div class="fs"><span class="k">淨額</span><span class="v up">+HK$2,900,000</span></div>
       </div>
       <div class="expo-strip">
-        <span class="t">净外汇敞口</span>
-        <span class="v" style="font-size:12.5px">US$1,200,000 <small>占总额 8.6%</small></span>
+        <span class="t">淨外匯敞口</span>
+        <span class="v" style="font-size:12.5px">US$1,200,000 <small>佔總額 8.6%</small></span>
       </div>
       <div class="panel-bd" style="padding-top:6px">
         <div class="alert-list">
           <div class="alert-item critical">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg></div>
             <div>
-              <div class="ttl">大额付款待审批 <span class="tag">高</span></div>
-              <div class="dsc">应付账款 HK$9,800,000 今日到期，超审批权限，需双签复核</div>
-              <div class="time">10 分钟前</div>
+              <div class="ttl">大額付款待審批 <span class="tag">高</span></div>
+              <div class="dsc">應付賬款 HK$9,800,000 今日到期，超審批權限，需雙籤複核</div>
+              <div class="time">10 分鐘前</div>
             </div>
           </div>
           <div class="alert-item serious">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg></div>
             <div>
-              <div class="ttl">流动性覆盖率预警 <span class="tag">中高</span></div>
-              <div class="dsc">按当前支出节奏，7 日后 LCR 预测降至 118%（警戒线 120%）</div>
-              <div class="time">32 分钟前</div>
+              <div class="ttl">流動性覆蓋率預警 <span class="tag">中高</span></div>
+              <div class="dsc">按當前支出節奏，7 日後 LCR 預測降至 118%（警戒線 120%）</div>
+              <div class="time">32 分鐘前</div>
             </div>
           </div>
           <div class="alert-item warning">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg></div>
             <div>
-              <div class="ttl">外汇敞口波动超阈值 <span class="tag">中</span></div>
-              <div class="dsc">USD/CNY 日波动率 0.45%，超过阈值 0.30%，建议评估结汇时点</div>
-              <div class="time">1 小时前</div>
+              <div class="ttl">外匯敞口波動超閾值 <span class="tag">中</span></div>
+              <div class="dsc">USD/CNY 日波動率 0.45%，超過閾值 0.30%，建議評估結匯時點</div>
+              <div class="time">1 小時前</div>
             </div>
           </div>
           <div class="alert-item warning">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg></div>
             <div>
-              <div class="ttl">账户余额低于最低水位 <span class="tag">中</span></div>
-              <div class="dsc">新加坡星展银行账户余额 S$650,000，低于最低水位 S$800,000</div>
-              <div class="time">2 小时前</div>
+              <div class="ttl">賬户餘額低於最低水位 <span class="tag">中</span></div>
+              <div class="dsc">新加坡星展銀行賬户餘額 S$650,000，低於最低水位 S$800,000</div>
+              <div class="time">2 小時前</div>
             </div>
           </div>
         </div>
@@ -988,8 +988,8 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">Financing Mix</div>
-          <h2>融资构成情况</h2>
-          <div class="sub">融资余额合计 HK$75,000,000</div>
+          <h2>融資構成情況</h2>
+          <div class="sub">融資餘額合計 HK$75,000,000</div>
         </div>
       </div>
       <div class="panel-bd" id="finWrap"></div>
@@ -998,94 +998,94 @@ td .sub{color:var(--muted);font-size:10px}
 
 </main>
 
-<!-- ==================== 账户类 ==================== -->
+<!-- ==================== 賬户類 ==================== -->
 <main class="content page single" id="page-accounts">
   <section class="col-mid">
     <div class="page-head2">
       <div>
-        <h1>银行账户管理</h1>
-        <p>覆盖 8 家银行 27 个账户 · 币种支持 CNY / USD / HKD / EUR / JPY</p>
+        <h1>銀行賬户管理</h1>
+        <p>覆蓋 8 家銀行 N 個賬户 · 幣種支持 CNY / USD / HKD / EUR / JPY</p>
       </div>
-      <span class="meta">更新于 09:45:02 · 银企直连</span>
+      <span class="meta">更新於 09:45:02 · 銀企直連</span>
     </div>
     <div class="cur-strip" id="curStrip"></div>
     <div class="panel">
       <div class="panel-hd">
         <div>
           <div class="kicker">Bank Accounts</div>
-          <h2>账户资金明细</h2>
-          <div class="sub">按银行分组 · 单位：原币百万（M）</div>
+          <h2>賬户資金明細</h2>
+          <div class="sub">按銀行分組 · 單位：原幣百萬（M）</div>
         </div>
-        <span style="font-size:11px;color:var(--muted);margin-top:2px">27 个账户 · 5 种币种</span>
+        <span style="font-size:11px;color:var(--muted);margin-top:2px">N 個賬户 · N 種幣種</span>
       </div>
       <div class="panel-bd" style="padding-top:6px;overflow-x:auto" id="accTbl"></div>
     </div>
   </section>
 </main>
 
-<!-- ==================== 存款类 ==================== -->
+<!-- ==================== 存款類 ==================== -->
 <main class="content page single" id="page-deposits">
   <section class="col-mid">
     <div class="page-head2">
       <div>
         <h1>存款管理</h1>
-        <p>定期存款 · 结构性存款 · 大额存单 · 通知存款</p>
+        <p>定期存款 · 結構性存款 · 大額存單 · 通知存款</p>
       </div>
-      <span class="meta">存款总额 HK$7,400万 · 更新于 09:45</span>
+      <span class="meta">存款總額 HK$7,400萬 · 更新於 09:45</span>
     </div>
     <div class="tiles3">
       <div class="tile">
-        <div class="lbl">存款总额</div>
-        <div class="val">HK$7,400<span class="unit">万</span></div>
-        <div class="delta"><span class="chg up">▲ +5.2%</span><span class="vs">较上月</span></div>
+        <div class="lbl">存款總額</div>
+        <div class="val">HK$7,400<span class="unit">萬</span></div>
+        <div class="delta"><span class="chg up">▲ +5.2%</span><span class="vs">較上月</span></div>
       </div>
       <div class="tile">
-        <div class="lbl">加权平均年利率</div>
+        <div class="lbl">加權平均年利率</div>
         <div class="val">2.85<span class="unit">%</span></div>
-        <div class="delta"><span class="chg up">▲ +0.12%</span><span class="vs">较上月</span></div>
+        <div class="delta"><span class="chg up">▲ +0.12%</span><span class="vs">較上月</span></div>
       </div>
       <div class="tile">
-        <div class="lbl">30 天内到期</div>
-        <div class="val">HK$970<span class="unit">万</span></div>
-        <div class="delta"><span class="chg down">▼ 需关注</span><span class="vs">3 笔</span></div>
+        <div class="lbl">30 天內到期</div>
+        <div class="val">HK$970<span class="unit">萬</span></div>
+        <div class="delta"><span class="chg down">▼ 需關注</span><span class="vs">3 筆</span></div>
       </div>
     </div>
     <div class="panel">
       <div class="panel-hd">
         <div>
           <div class="kicker">Deposit Products</div>
-          <h2>存款产品明细</h2>
+          <h2>存款產品明細</h2>
         </div>
-        <span style="font-size:11px;color:var(--muted);margin-top:2px">共 12 笔</span>
+        <span style="font-size:11px;color:var(--muted);margin-top:2px">共 12 筆</span>
       </div>
       <div class="panel-bd" style="padding-top:6px;overflow-x:auto" id="depTbl"></div>
     </div>
   </section>
 </main>
 
-<!-- ==================== 结算类 ==================== -->
+<!-- ==================== 結算類 ==================== -->
 <main class="content page single" id="page-settlement">
   <section class="col-mid">
     <div class="page-head2">
       <div>
-        <h1>结算管理</h1>
-        <p>收付款 · 结售汇 · 跨境划拨 · 银企直连对账</p>
+        <h1>結算管理</h1>
+        <p>收付款 · 結售匯 · 跨境劃撥 · 銀企直連對賬</p>
       </div>
-      <span class="meta">结算日历：工作日 09:00-17:30</span>
+      <span class="meta">結算日曆：工作日 09:00-17:30</span>
     </div>
     <div class="tiles3">
       <div class="tile">
-        <div class="lbl">今日结算笔数</div>
-        <div class="val">128<span class="unit">笔</span></div>
-        <div class="delta"><span class="chg up">▲ +16.4%</span><span class="vs">较昨日</span></div>
+        <div class="lbl">今日結算筆數</div>
+        <div class="val">128<span class="unit">筆</span></div>
+        <div class="delta"><span class="chg up">▲ +16.4%</span><span class="vs">較昨日</span></div>
       </div>
       <div class="tile">
-        <div class="lbl">今日结算金额</div>
-        <div class="val">HK$420<span class="unit">万</span></div>
-        <div class="delta"><span class="chg up">▲ +9.8%</span><span class="vs">较昨日</span></div>
+        <div class="lbl">今日結算金額</div>
+        <div class="val">HK$420<span class="unit">萬</span></div>
+        <div class="delta"><span class="chg up">▲ +9.8%</span><span class="vs">較昨日</span></div>
       </div>
       <div class="tile">
-        <div class="lbl">结算成功率</div>
+        <div class="lbl">結算成功率</div>
         <div class="val">99.7<span class="unit">%</span></div>
         <div class="delta"><span class="chg up">▲ +0.2%</span><span class="vs">近 7 日</span></div>
       </div>
@@ -1094,52 +1094,52 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">Settlement</div>
-          <h2>交易明细</h2>
+          <h2>交易明細</h2>
         </div>
-        <span style="font-size:11px;color:var(--muted);margin-top:2px">今日累计 128 笔</span>
+        <span style="font-size:11px;color:var(--muted);margin-top:2px">今日累計 128 筆</span>
       </div>
       <div class="panel-bd" style="padding-top:6px;overflow-x:auto" id="setTbl"></div>
       <div class="more">
-        <span>数据来源：SWIFT / 银企直连 · 已对账</span>
-        <a>导出结算报表 →</a>
+        <span>數據來源：SWIFT / 銀企直連 · 已對賬</span>
+        <a>導出結算報表 →</a>
       </div>
     </div>
   </section>
 </main>
 
-<!-- ==================== 融资类 ==================== -->
+<!-- ==================== 融資類 ==================== -->
 <main class="content page single" id="page-financing">
   <section class="col-mid">
     <div class="page-head2">
       <div>
-        <h1>融资管理</h1>
-        <p>银行贷款 · 债券融资 · 供应链融资 · 融资租赁 · 股权融资</p>
+        <h1>融資管理</h1>
+        <p>銀行貸款 · 債券融資 · 供應鏈融資 · 融資租賃 · 股權融資</p>
       </div>
-      <span class="meta">融资余额 HK$7,500万 · 更新于 09:45</span>
+      <span class="meta">融資餘額 HK$7,500萬 · 更新於 09:45</span>
     </div>
     <div class="tiles3">
       <div class="tile">
-        <div class="lbl">融资余额</div>
-        <div class="val">HK$7,500<span class="unit">万</span></div>
-        <div class="delta"><span class="chg down">▼ -2.6%</span><span class="vs">较上月</span></div>
+        <div class="lbl">融資餘額</div>
+        <div class="val">HK$7,500<span class="unit">萬</span></div>
+        <div class="delta"><span class="chg down">▼ -2.6%</span><span class="vs">較上月</span></div>
       </div>
       <div class="tile">
-        <div class="lbl">平均融资成本</div>
+        <div class="lbl">平均融資成本</div>
         <div class="val">3.42<span class="unit">%</span></div>
-        <div class="delta"><span class="chg down">▼ -0.18%</span><span class="vs">较上月</span></div>
+        <div class="delta"><span class="chg down">▼ -0.18%</span><span class="vs">較上月</span></div>
       </div>
       <div class="tile">
-        <div class="lbl">30 天内到期</div>
-        <div class="val">HK$1,090<span class="unit">万</span></div>
-        <div class="delta"><span class="chg down">▼ 需关注</span><span class="vs">5 笔</span></div>
+        <div class="lbl">30 天內到期</div>
+        <div class="val">HK$1,090<span class="unit">萬</span></div>
+        <div class="delta"><span class="chg down">▼ 需關注</span><span class="vs">5 筆</span></div>
       </div>
     </div>
     <div class="panel">
       <div class="panel-hd">
         <div>
           <div class="kicker">Financing Mix</div>
-          <h2>融资构成情况</h2>
-          <div class="sub">融资余额合计 HK$7,500万</div>
+          <h2>融資構成情況</h2>
+          <div class="sub">融資餘額合計 HK$7,500萬</div>
         </div>
       </div>
       <div class="panel-bd" id="finWrap2"></div>
@@ -1148,9 +1148,9 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">Financing Detail</div>
-          <h2>融资明细</h2>
+          <h2>融資明細</h2>
         </div>
-        <span style="font-size:11px;color:var(--muted);margin-top:2px">共 12 笔</span>
+        <span style="font-size:11px;color:var(--muted);margin-top:2px">共 12 筆</span>
       </div>
       <div class="panel-bd" style="padding-top:6px;overflow-x:auto" id="finTbl"></div>
     </div>
@@ -1160,7 +1160,7 @@ td .sub{color:var(--muted);font-size:10px}
 <div id="tooltip" role="tooltip"></div>
 
 <script>
-/* ================= 实时时钟 ================= */
+/* ================= 實時時鐘 ================= */
 (function(){
   const clock = document.getElementById('clock');
   function tick(){
@@ -1172,9 +1172,9 @@ td .sub{color:var(--muted);font-size:10px}
   tick(); setInterval(tick, 1000);
 })();
 
-/* ================= 登录：统一保安编码器 ================= */
+/* ================= 登錄：統一保安編碼器 ================= */
 (function(){
-  // 编码器动态口令：每 30 秒换一次（与时间窗口绑定的模拟算法）
+  // 編碼器動態口令：每 30 秒換一次（與時間窗口綁定的模擬算法）
   function tokenCode(){
     const t = Math.floor(Date.now() / 30000);
     let s = (t * 2654435761) >>> 0;
@@ -1201,10 +1201,10 @@ td .sub{color:var(--muted);font-size:10px}
     const user = document.getElementById('loginUser').value.trim();
     const tok = document.getElementById('loginToken').value.trim();
     const pass = document.getElementById('loginPass').value;
-    if(!user){ errEl.textContent = '请输入保安编码器账号'; return; }
-    if(!/^\d{6}$/.test(tok)){ errEl.textContent = '请输入编码器上显示的 6 位保安编码'; return; }
-    if(tok !== tokenCode()){ errEl.textContent = '保安编码已过期或错误，请对照编码器重新输入'; return; }
-    if(pass !== '123456'){ errEl.textContent = '密码错误，请重新输入'; return; }
+    if(!user){ errEl.textContent = '請輸入保安編碼器賬號'; return; }
+    if(!/^\d{6}$/.test(tok)){ errEl.textContent = '請輸入編碼器上顯示的 6 位保安編碼'; return; }
+    if(tok !== tokenCode()){ errEl.textContent = '保安編碼已過期或錯誤，請對照編碼器重新輸入'; return; }
+    if(pass !== '123456'){ errEl.textContent = '密碼錯誤，請重新輸入'; return; }
     errEl.textContent = '';
     loginScreen.classList.add('hidden');
   }
@@ -1214,7 +1214,7 @@ td .sub{color:var(--muted);font-size:10px}
   });
 })();
 
-/* ================= 顶栏导航（页面切换） ================= */
+/* ================= 頂欄導航（頁面切換） ================= */
 document.querySelectorAll('.topnav a').forEach(a => {
   a.addEventListener('click', () => {
     document.querySelectorAll('.topnav a').forEach(x => x.classList.remove('active'));
@@ -1227,7 +1227,7 @@ document.querySelectorAll('.topnav a').forEach(a => {
   });
 });
 
-/* ================= 退出系统 ================= */
+/* ================= 退出系統 ================= */
 document.getElementById('logoutBtn').addEventListener('click', () => {
   document.getElementById('loginPass').value = '';
   document.getElementById('loginToken').value = '';
@@ -1237,7 +1237,7 @@ document.getElementById('logoutBtn').addEventListener('click', () => {
   document.getElementById('loginUser').focus();
 });
 
-/* 预览模式（仅用于内部演示截图）：?preview=1 跳过登录，#accounts 等锚点直达页面 */
+/* 預覽模式（僅用於內部演示截圖）：?preview=1 跳過登錄，#accounts 等錨點直達頁面 */
 (function(){
   const qs = new URLSearchParams(location.search);
   if(qs.has('preview')){
@@ -1250,12 +1250,12 @@ document.getElementById('logoutBtn').addEventListener('click', () => {
   }
 })();
 
-/* ================= 世界地图 ================= */
-// 真实海岸线数据（Natural Earth 公共领域数据，等距圆柱投影 x=(lon+180)/360*900, y=(90-lat)/180*450）
-// LAND_MAIN：50m 精度，裁剪至亚太区域（主地图）
-// LAND_GLOBE：110m 精度，全球范围（左下角小地图）
-// LAND_CHINA：中国国界（黄色重点标识）
-// LAND_ASEAN：东南亚十国边界（黄色描边）
+/* ================= 世界地圖 ================= */
+// 真實海岸線數據（Natural Earth 公共領域數據，等距圓柱投影 x=(lon+180)/360*900, y=(90-lat)/180*450）
+// LAND_MAIN：50m 精度，裁剪至亞太區域（主地圖）
+// LAND_GLOBE：110m 精度，全球範圍（左下角小地圖）
+// LAND_CHINA：中國國界（黃色重點標識）
+// LAND_ASEAN：東南亞十國邊界（黃色描邊）
 const LAND_ASEAN=["M719.9 171.2L716.7 172.5L714.1 177.6L722.1 186.6L723.6 193.5L722.5 196.7L716.5 198.8L716.5 200.4L715.3 199.4L716.4 200.9L714.6 200.0L715.4 201.5L711.9 203.5L712.7 200.1L711.1 199.0L712.6 197.7L715.4 198.0L714.6 195.9L718.8 194.1L719.1 186.9L712.9 178.4L709.7 176.7L712.3 175.0L711.5 173.4L707.8 172.8L705.3 169.1L706.2 168.1L709.9 168.6L713.2 166.6L717.0 168.1L716.7 170.1L719.9 171.2Z","M700.3 174.2L701.3 176.1L703.0 176.1L702.4 181.1L705.3 179.5L706.7 180.5L708.2 179.0L709.9 179.2L714.1 185.9L712.7 189.4L708.0 189.2L705.8 191.2L707.3 195.7L704.6 193.4L702.2 193.4L702.4 191.4L700.0 191.6L697.9 200.7L698.1 201.8L699.6 201.8L701.1 207.0L705.3 209.4L702.8 210.9L702.6 209.4L700.3 208.9L695.6 203.9L696.9 198.3L699.0 195.5L697.8 190.7L695.5 187.6L697.2 184.1L693.4 178.7L695.0 175.6L700.3 174.2Z","M752.8 178.5L755.7 178.9L756.3 182.2L753.5 186.7L754.4 189.6L759.5 190.4L760.1 193.6L756.5 190.2L756.5 192.0L754.4 190.2L751.6 190.5L752.4 188.4L750.2 187.9L749.4 184.4L750.9 184.7L751.5 178.7L752.8 178.5Z","M743.3 203.9L748.9 196.7L749.2 198.7L743.3 203.9Z","M756.2 196.0L757.8 196.8L754.9 198.9L754.8 195.4L756.2 196.0Z","M757.8 202.3L756.0 200.4L758.1 197.5L758.9 198.0L757.8 202.3Z","M761.4 196.6L762.6 197.0L762.6 199.9L761.4 196.6Z","M763.1 193.7L764.3 197.4L760.7 193.6L763.1 193.7Z","M751.8 191.3L753.8 192.2L753.1 194.5L750.8 191.5L751.8 191.3Z","M765.0 201.7L766.5 206.9L765.5 209.2L764.2 206.8L763.4 211.0L763.1 209.8L760.2 209.0L760.5 206.5L759.2 205.5L758.5 206.5L756.5 205.6L754.9 207.6L755.6 205.1L758.6 203.2L759.5 204.9L763.7 202.5L763.7 200.6L765.0 201.7Z","M700.3 208.9L702.6 209.4L702.8 210.9L705.7 209.5L707.7 211.5L708.6 217.7L710.6 221.5L708.7 221.7L703.2 217.8L700.3 208.9Z","M743.9 214.6L739.2 214.5L736.3 221.4L731.2 221.1L726.3 222.8L723.9 220.4L728.1 221.5L728.1 218.9L732.6 217.0L735.0 213.6L736.6 214.9L737.6 212.8L738.3 214.1L738.5 211.5L741.9 207.5L742.0 208.5L742.8 207.6L744.1 208.8L743.8 210.3L748.1 211.6L745.7 212.5L746.4 214.1L743.9 214.6Z","M705.3 169.1L707.8 172.8L711.5 173.4L712.3 175.0L709.7 176.7L712.9 178.4L718.5 184.9L718.5 188.6L715.6 188.8L715.2 190.2L713.1 189.5L714.1 185.9L709.9 179.2L708.2 179.0L706.7 180.5L705.3 179.5L702.3 181.0L703.0 176.1L701.1 175.9L700.5 173.5L702.8 171.1L704.5 172.0L703.8 169.4L705.3 169.1Z","M693.7 221.3L694.6 223.6L692.7 221.4L693.7 221.3Z","M741.6 246.5L739.6 247.0L741.0 245.5L741.6 246.5Z","M738.6 245.4L739.3 246.0L737.9 247.1L736.2 245.4L738.6 245.4Z","M715.1 229.2L717.0 231.4L716.7 232.7L712.8 230.1L715.1 229.2Z","M757.9 236.4L758.0 238.3L756.6 239.2L757.9 236.4Z","M720.5 232.5L719.0 233.0L719.2 231.4L720.5 232.5Z","M691.2 211.9L693.9 212.0L701.3 219.5L702.6 219.4L707.6 223.6L706.4 224.5L709.2 224.3L708.6 226.4L710.9 227.6L711.6 231.5L713.5 231.0L715.1 232.8L714.4 239.5L711.6 238.8L711.5 239.8L703.9 232.9L696.5 220.3L688.9 213.3L688.1 211.1L691.2 211.9Z","M757.0 246.5L749.5 246.7L751.5 245.6L755.8 246.6L757.3 245.3L757.0 246.5Z","M750.0 248.4L752.0 250.3L747.4 248.8L750.0 248.4Z","M745.6 245.8L747.8 246.7L742.0 247.5L742.9 245.9L744.9 246.8L744.4 245.4L745.6 245.8Z","M762.2 222.5L759.4 224.2L750.5 224.3L750.2 226.4L751.7 228.4L753.9 227.1L758.6 226.9L753.4 229.7L757.2 236.0L754.0 236.9L754.0 235.2L752.2 233.8L752.6 231.9L751.6 231.7L750.7 232.4L751.1 239.0L748.9 239.0L749.1 235.1L747.0 231.8L750.7 222.6L752.7 221.7L759.8 222.9L762.8 220.8L762.2 222.5Z","M718.4 240.0L721.7 242.0L726.1 242.4L727.1 241.1L731.3 242.3L732.5 244.1L736.0 244.5L736.5 246.9L719.8 244.3L713.1 242.1L715.2 239.8L718.4 240.0Z","M724.1 219.9L726.3 222.8L731.2 221.1L736.3 221.4L739.2 214.5L742.8 214.2L744.4 215.8L742.6 215.9L745.2 219.2L744.5 219.9L747.5 222.5L744.8 222.3L743.9 226.9L740.7 229.5L740.6 232.8L736.7 235.4L735.9 233.1L734.3 233.6L732.6 232.3L729.6 233.9L729.2 232.2L725.6 232.4L725.0 228.2L723.1 227.0L722.4 224.1L724.1 219.9Z","M769.3 222.9L771.7 221.1L770.7 223.2L772.2 224.5L769.7 224.3L771.1 227.2L769.2 225.6L768.6 222.2L770.1 219.5L769.3 222.9Z","M774.4 232.2L776.4 232.8L777.0 234.6L774.6 233.3L769.8 233.7L770.5 232.2L774.4 232.2Z","M767.2 232.7L768.1 234.1L765.1 233.6L767.2 232.7Z","M762.3 247.4L762.4 249.2L759.1 250.8L759.3 249.0L762.3 247.4Z","M786.9 239.3L786.1 240.8L785.5 239.3L786.9 239.3Z","M796.3 245.7L794.1 246.0L795.2 243.9L796.9 243.5L796.3 245.7Z","M802.4 231.5L802.4 247.8L800.3 244.8L797.2 245.6L796.9 243.1L797.9 243.0L796.5 242.3L795.8 239.2L793.2 237.4L784.9 234.5L784.6 232.6L782.3 235.1L781.9 233.2L779.9 232.0L784.3 231.6L784.8 230.3L780.8 230.6L779.8 228.9L777.5 228.6L781.0 225.9L784.9 226.9L785.5 230.8L788.1 233.4L794.5 228.7L802.4 231.5Z","M718.8 188.2L718.8 193.9L714.6 195.9L715.4 198.0L712.6 197.7L711.1 199.0L709.0 198.6L708.8 197.1L707.9 197.7L705.8 191.2L707.6 189.4L711.9 188.9L715.2 190.2L715.6 188.8L718.8 188.2Z","M700.3 174.2L695.0 175.6L693.4 178.7L697.2 184.1L695.5 187.6L697.8 190.7L699.0 195.5L696.4 199.9L697.2 195.7L694.3 183.6L692.1 181.5L691.9 183.2L690.5 183.1L688.5 185.7L688.4 184.8L686.7 185.2L686.8 183.7L685.6 185.0L686.5 181.1L685.1 176.8L684.8 177.8L683.7 176.6L685.0 176.4L682.8 175.4L680.4 171.8L682.9 169.4L683.3 164.8L685.3 165.3L687.8 158.5L690.5 156.8L692.8 157.2L692.2 156.0L693.8 153.7L696.6 156.1L696.8 158.3L693.9 165.2L697.1 164.7L697.2 167.0L698.8 167.6L698.0 169.7L700.5 171.3L702.8 170.7L700.3 174.2Z","M737.6 212.8L736.6 214.9L735.2 213.5L737.6 212.8Z"];
 
 const LAND_MAIN=["M900.0 265.4L899.8 266.9L896.2 267.0L900.0 265.4Z","M807.9 254.9L809.4 260.9L813.2 262.4L816.0 272.4L821.9 275.7L824.3 281.1L826.6 280.9L827.1 283.6L832.9 289.9L834.0 296.7L832.4 303.6L828.2 309.0L824.8 318.8L819.7 319.8L815.5 321.8L816.0 322.9L813.7 320.6L811.8 320.9L812.2 319.7L808.8 322.1L803.6 320.9L799.5 318.1L798.2 313.4L795.5 314.0L795.2 310.4L794.2 312.9L792.2 313.1L794.8 308.9L794.5 306.4L789.1 312.3L785.6 306.4L777.9 303.7L764.8 305.7L758.8 309.8L749.6 309.9L744.7 312.6L737.5 310.6L739.2 304.2L733.0 290.5L734.6 291.3L733.6 289.0L735.5 290.7L733.5 286.1L735.1 279.7L735.4 281.2L741.8 276.6L752.5 274.0L755.9 270.3L755.7 267.8L757.4 266.1L758.9 268.8L759.0 265.6L761.9 266.0L761.1 263.7L765.1 259.9L768.6 260.1L770.2 263.3L771.4 261.9L774.1 262.8L773.4 261.0L776.6 256.1L781.8 255.3L779.9 253.0L787.6 255.5L789.8 254.6L790.2 256.1L791.4 254.9L792.4 255.9L789.8 258.3L788.6 262.3L801.3 269.1L803.5 265.2L804.2 255.9L806.1 251.8L807.9 254.9Z","M895.7 268.4L896.7 270.2L893.3 270.2L895.7 268.4Z","M769.3 222.9L771.7 221.1L770.7 223.2L772.2 224.5L769.7 224.3L771.1 227.2L768.6 222.2L770.1 219.5L769.3 222.9Z","M623.0 347.8L626.4 348.0L622.0 349.2L622.5 346.7L623.0 347.8Z","M608.4 23.2L606.3 22.9L613.6 22.7L608.4 23.2Z","M743.3 203.9L748.9 196.7L749.2 198.7L743.3 203.9Z","M756.2 196.0L757.8 196.8L754.9 198.9L754.8 195.4L756.2 196.0Z","M757.8 202.3L756.0 200.4L758.1 197.5L757.8 202.3Z","M763.1 193.7L764.3 197.4L760.7 193.6L763.1 193.7Z","M751.8 191.3L753.8 192.2L753.1 194.5L751.8 191.3Z","M839.9 241.7L838.4 241.8L836.8 238.6L839.9 241.7Z","M832.4 236.9L827.1 231.4L832.5 235.3L832.4 236.9Z","M796.3 245.7L794.1 246.0L796.9 243.5L796.3 245.7Z","M774.4 232.2L777.0 234.6L774.6 233.3L769.8 233.7L770.5 232.2L774.4 232.2Z","M767.2 232.7L768.1 234.1L765.1 233.6L767.2 232.7Z","M757.0 246.5L749.5 246.7L751.5 245.6L755.8 246.6L757.3 245.3L757.0 246.5Z","M750.0 248.4L752.0 250.3L747.4 248.8L750.0 248.4Z","M745.6 245.8L747.8 246.7L742.0 247.5L742.9 245.9L745.6 245.8Z","M715.1 229.2L716.7 232.7L712.8 230.1L715.1 229.2Z","M504.0 28.5L512.3 30.6L502.3 31.4L504.1 30.2L500.6 28.8L504.0 28.5Z","M568.6 22.9L571.7 23.4L562.3 23.5L568.6 22.9Z","M575.7 22.7L579.3 23.3L566.6 24.2L575.7 22.7Z","M575.7 52.0L570.7 52.4L572.4 51.2L575.7 52.0Z","M626.7 42.3L624.8 42.3L629.1 41.9L626.7 42.3Z","M681.7 25.8L677.7 25.0L684.5 25.2L681.7 25.8Z","M509.6 136.2L515.8 136.7L512.0 137.7L509.6 136.2Z","M536.2 136.0L532.5 138.6L530.8 137.6L536.2 136.0Z","M481.4 85.5L479.7 88.1L477.4 85.7L481.4 85.5Z","M148.6 409.4L144.3 411.0L141.6 409.6L148.6 409.4Z","M134.2 408.2L140.4 410.6L131.4 408.6L134.2 408.2Z","M284.6 425.2L280.5 423.9L286.2 424.9L284.6 425.2Z","M204.8 404.8L211.2 405.6L194.2 405.2L204.8 404.8Z","M264.1 407.7L263.6 409.0L259.8 407.9L264.1 407.7Z","M280.0 393.7L277.2 393.8L280.7 391.6L280.0 393.7Z","M302.9 353.2L305.5 354.1L301.2 355.6L302.9 353.2Z","M357.2 360.2L360.5 361.9L355.0 360.0L357.2 360.2Z","M265.6 333.4L264.0 333.1L264.9 329.5L266.4 330.5L265.6 333.4Z","M299.3 353.7L301.8 353.6L297.6 355.1L299.3 353.7Z","M263.8 347.9L263.5 350.0L263.2 348.6L261.1 349.5L262.8 346.8L263.8 347.9Z","M297.2 110.1L300.4 110.1L296.4 110.7L298.8 107.5L297.2 110.1Z","M256.8 178.9L259.5 180.2L254.2 179.3L256.8 178.9Z","M284.7 178.9L285.9 179.4L282.0 180.0L282.1 178.8L284.7 178.9Z","M290.5 108.8L294.9 108.9L293.0 110.1L289.0 108.3L290.0 107.3L290.5 108.8Z","M829.8 235.7L831.0 235.9L830.2 238.6L826.2 240.7L820.8 239.2L825.2 237.5L825.5 238.8L827.3 238.6L829.8 235.7Z","M768.2 246.1L759.0 250.7L762.9 246.6L768.2 246.1Z","M812.6 327.0L820.5 327.1L820.0 332.9L818.2 332.0L817.2 334.0L815.1 333.9L811.9 328.5L812.6 327.0Z","M691.3 22.3L694.6 23.3L684.7 25.0L678.8 24.1L683.4 22.4L691.3 22.3Z","M694.2 24.6L699.9 25.4L697.6 26.8L699.8 27.6L682.7 26.3L694.2 24.6Z","M707.2 26.9L706.0 27.9L709.5 27.1L713.4 28.5L698.2 29.9L704.0 26.6L707.2 26.9Z","M800.1 35.4L813.4 36.2L810.0 37.4L805.8 35.8L807.8 37.6L797.7 38.4L792.4 36.7L795.5 34.7L800.1 35.4Z","M805.5 40.3L808.7 41.9L799.2 41.4L805.5 40.3Z","M817.0 36.6L827.1 37.1L815.4 37.0L817.0 36.6Z","M883.2 312.3L885.8 313.1L886.8 317.1L888.9 318.0L888.7 316.2L890.3 319.1L896.3 319.2L894.8 323.1L892.7 323.1L888.3 329.0L886.6 328.2L887.9 325.3L884.4 323.3L886.5 322.0L887.3 317.7L881.8 311.1L883.2 312.3Z","M882.8 328.2L885.9 327.8L881.3 333.7L882.7 334.6L878.1 335.7L876.9 339.7L872.7 341.6L866.2 339.9L870.9 335.2L877.6 332.2L880.7 326.9L882.4 326.3L882.8 328.2Z","M765.0 201.7L766.5 206.9L765.5 209.2L764.2 206.8L763.4 211.0L760.2 209.0L760.5 206.5L759.2 205.5L756.5 205.6L754.9 207.6L755.6 205.1L758.6 203.2L759.5 204.9L763.7 202.5L763.7 200.6L765.0 201.7Z","M752.8 178.5L755.7 178.9L756.3 182.2L753.5 186.7L754.4 189.6L759.5 190.4L760.1 193.6L756.5 190.2L756.5 192.0L754.4 190.2L751.6 190.5L752.4 188.4L750.2 187.9L749.4 184.4L750.9 184.7L751.5 178.7L752.8 178.5Z","M783.7 226.8L785.3 227.1L785.5 230.8L787.7 233.4L794.8 228.7L811.2 234.6L814.4 238.5L819.5 240.8L817.4 242.3L821.5 247.6L827.1 250.6L825.8 251.6L819.4 250.2L815.1 245.2L811.3 243.9L805.5 245.5L808.4 246.9L806.6 248.3L802.8 248.1L800.3 244.8L797.3 245.7L796.9 243.1L797.9 243.0L795.8 239.2L784.9 234.5L784.6 232.6L782.4 235.2L779.9 232.0L784.3 231.6L784.8 230.3L780.8 230.6L777.5 228.6L781.0 225.9L783.7 226.8Z","M762.2 222.5L759.4 224.2L750.5 224.3L751.7 228.4L758.6 226.9L753.4 229.7L757.2 236.0L754.0 236.9L751.6 231.7L751.1 239.0L748.9 239.0L749.1 235.1L747.0 231.8L750.7 222.6L759.8 222.9L762.8 220.8L762.2 222.5Z","M718.4 240.0L721.7 242.0L726.1 242.4L727.1 241.1L731.3 242.3L732.5 244.1L736.0 244.5L736.5 246.9L713.1 242.1L715.2 239.8L718.4 240.0Z","M691.2 211.9L693.9 212.0L707.6 223.6L706.4 224.5L709.2 224.3L708.6 226.4L710.9 227.6L711.6 231.5L713.5 231.0L715.1 232.8L714.4 239.5L711.5 239.8L703.9 232.9L696.5 220.3L688.1 211.1L691.2 211.9Z","M742.0 208.3L743.1 207.7L743.8 210.3L748.1 211.6L742.6 215.9L747.5 222.5L744.8 222.3L743.9 226.9L740.7 229.5L739.9 234.0L736.7 235.4L735.9 233.1L732.6 232.3L729.6 233.9L729.2 232.2L725.6 232.4L725.0 228.2L722.8 226.1L722.7 221.3L724.1 219.9L728.1 221.5L728.8 218.1L738.6 212.6L742.0 208.3Z","M619.4 34.4L603.4 36.7L591.6 41.7L584.4 40.6L591.2 37.6L589.5 37.2L597.2 35.4L618.8 32.5L622.4 33.2L619.4 34.4Z","M588.3 41.7L591.1 42.0L588.2 45.2L594.1 48.2L584.3 48.0L585.4 47.2L583.5 46.2L578.6 45.6L583.1 42.0L588.3 41.7Z","M806.9 89.0L811.8 103.4L807.8 102.0L806.4 105.7L809.0 109.1L806.4 108.2L805.2 110.2L805.5 96.9L804.2 94.3L806.9 89.0Z","M809.6 114.7L813.4 114.2L812.8 115.8L814.6 116.5L809.9 117.8L808.1 120.0L801.2 118.6L802.9 120.5L800.1 121.3L799.7 118.5L801.0 116.7L803.4 116.8L804.2 111.5L809.6 114.7Z","M803.1 121.6L804.9 126.4L802.4 129.6L800.9 137.0L799.6 137.7L799.6 135.9L797.1 138.5L796.8 137.2L795.5 138.5L792.0 137.4L792.1 139.2L789.2 141.3L787.8 140.0L788.5 138.5L786.9 138.1L777.3 140.1L782.3 136.2L789.8 136.0L792.1 131.5L793.3 131.2L793.1 133.1L795.8 132.0L799.5 127.8L799.9 123.3L803.1 121.6Z","M785.9 139.4L786.8 140.4L785.5 141.9L784.1 141.2L782.0 143.1L780.1 141.7L785.9 139.4Z","M777.9 141.0L780.0 142.8L776.7 147.5L776.9 145.7L775.4 146.5L776.4 142.9L775.6 142.1L774.4 143.6L774.0 141.9L776.8 140.2L777.9 141.0Z","M752.5 168.4L751.9 170.1L750.3 165.9L754.0 161.8L752.5 168.4Z","M727.2 175.0L725.2 178.9L721.8 178.7L723.2 175.3L727.2 175.0Z","M650.0 200.5L654.7 206.8L651.8 210.1L649.6 207.9L649.3 204.5L651.1 201.3L650.0 200.5Z","M573.8 256.1L576.0 264.1L574.2 263.8L573.4 270.8L567.9 287.0L562.8 288.9L560.1 287.5L558.2 281.0L561.0 274.8L559.9 268.5L561.2 265.5L566.0 264.8L569.9 261.7L569.9 259.2L572.0 258.2L573.0 255.2L573.8 256.1Z","M274.2 424.2L270.5 423.6L283.2 421.0L274.2 424.2Z","M336.9 422.0L340.9 422.1L342.5 424.5L325.6 427.0L314.1 426.9L324.0 423.8L324.5 421.5L327.3 420.1L340.5 420.8L336.9 422.0Z","M300.7 425.9L298.5 427.4L283.1 425.7L295.9 425.9L298.6 424.4L301.7 425.5L300.7 425.9Z","M274.9 398.0L279.2 402.3L279.4 404.6L277.0 406.3L267.4 406.1L274.5 405.6L270.8 405.6L272.9 404.8L269.2 404.1L265.0 405.4L261.5 404.6L269.5 403.3L268.2 402.7L275.3 402.8L272.0 401.6L276.0 401.0L270.7 400.1L269.7 397.8L274.9 398.0Z","M277.1 356.7L287.1 361.7L270.2 361.5L274.2 361.3L272.8 360.3L273.7 359.1L274.4 360.9L277.4 361.1L274.6 359.7L276.5 358.4L273.8 358.0L277.1 356.7Z","M245.4 167.1L250.4 167.8L264.6 174.6L255.7 175.4L256.9 173.4L253.2 171.0L245.4 169.5L245.4 168.3L237.8 170.4L239.9 168.3L245.4 167.1Z","M502.2 24.4L518.0 25.2L509.9 27.0L494.8 24.6L502.2 24.4Z","M492.0 25.2L503.5 28.1L497.9 29.1L491.8 33.6L485.0 31.2L492.3 30.3L484.2 29.9L492.9 29.0L492.0 28.3L482.9 29.4L476.7 25.6L484.2 25.3L481.4 26.1L484.9 26.7L487.1 25.6L490.9 27.6L489.6 25.7L492.0 25.2Z","M474.1 122.8L473.9 127.1L471.6 127.7L470.6 122.7L474.1 122.8Z","M473.7 118.0L473.0 121.5L471.4 119.1L473.7 118.0Z","M488.9 129.4L487.8 133.3L481.1 130.5L488.9 129.4Z","M318.2 50.1L320.2 51.0L315.6 51.8L312.7 50.7L314.1 49.2L318.2 50.1Z","M132.0 98.4L136.3 99.2L141.8 103.9L137.5 103.2L138.0 102.0L136.1 102.6L129.1 98.3L132.0 98.4Z","M270.1 175.7L275.1 175.8L279.1 178.7L272.4 179.3L271.4 180.9L269.9 179.4L263.9 179.0L269.1 178.6L266.4 175.7L270.1 175.7Z","M325.9 225.6L329.0 225.7L327.9 228.5L323.7 229.5L323.4 225.7L325.9 225.6Z","M442.2 78.7L439.7 81.1L445.5 81.3L441.7 84.1L443.3 84.4L440.5 84.8L445.9 86.1L449.8 89.7L450.3 91.0L448.4 90.7L450.7 91.7L450.1 92.7L454.1 93.1L451.1 96.3L453.5 97.0L435.9 99.9L443.9 95.6L437.1 95.6L440.0 93.6L438.3 93.0L439.3 92.1L443.1 91.7L442.9 89.7L441.0 88.6L442.4 87.6L437.4 88.1L438.5 85.2L437.3 84.5L435.7 86.7L437.0 83.1L434.7 83.2L437.5 78.6L442.2 78.7Z","M432.1 87.4L434.7 87.0L436.3 88.7L434.1 90.0L434.2 94.4L426.8 96.3L424.1 95.5L428.0 93.3L425.2 93.6L427.7 92.0L424.8 91.5L426.1 90.5L424.9 89.4L428.6 89.4L429.3 87.1L432.1 87.4Z","M411.1 59.4L413.5 59.0L412.2 59.7L416.1 62.3L403.4 66.5L393.4 65.4L396.0 63.4L389.9 62.8L395.4 61.4L388.8 61.2L391.8 60.6L390.4 60.4L391.4 59.5L393.9 60.2L392.8 58.9L396.5 59.9L397.2 61.8L399.5 59.7L404.6 60.7L404.3 59.6L411.1 59.4Z","M867.7 418.3L873.4 418.8L865.5 418.8L867.7 418.3Z","M275.7 362.3L278.9 362.4L279.9 364.1L275.7 362.3Z","M267.7 358.7L269.5 359.5L267.8 360.3L265.4 358.9L267.7 358.7Z","M265.7 336.0L264.8 338.3L263.5 336.6L265.7 336.0Z","M594.5 21.1L596.4 21.5L588.7 21.7L594.5 21.1Z","M586.8 22.2L594.2 23.0L585.2 23.0L586.8 22.2Z","M233.5 47.5L237.9 47.4L238.3 45.9L235.2 45.0L239.3 44.9L235.9 43.2L239.4 43.0L236.4 42.2L246.0 40.8L249.3 43.1L246.9 44.2L248.5 43.9L247.7 45.2L250.4 43.9L253.5 45.3L253.3 44.1L256.2 44.6L253.9 43.6L257.8 43.2L262.3 44.2L260.2 45.7L264.3 44.9L262.0 45.7L263.2 45.8L262.5 47.0L265.3 45.6L264.5 46.5L270.9 46.2L272.0 46.8L268.4 47.9L273.3 47.4L270.3 48.9L271.4 49.7L274.8 47.9L278.8 48.5L274.9 49.9L280.4 49.3L282.0 50.6L276.9 51.2L283.3 51.9L276.7 52.9L292.4 56.9L290.7 57.9L296.8 58.4L293.6 59.0L295.0 59.9L293.4 60.9L291.4 60.4L291.0 62.7L286.5 60.6L288.9 59.2L278.1 59.5L289.0 65.7L288.3 66.9L287.0 65.6L288.3 67.7L287.2 68.4L277.7 65.7L285.0 69.5L284.2 70.3L271.6 67.3L266.8 63.5L254.6 63.5L256.7 61.4L261.4 62.9L260.5 61.8L266.1 61.3L264.0 59.6L269.4 56.9L265.4 53.2L258.5 53.3L260.9 52.0L252.3 48.5L252.3 50.2L245.9 49.8L247.7 50.7L230.2 49.4L226.4 47.3L232.1 47.5L224.9 45.1L228.2 41.5L237.5 40.6L233.3 43.1L237.4 46.6L233.5 47.5Z","M276.3 17.5L297.0 19.1L278.3 21.8L288.0 21.3L269.9 24.7L273.6 24.8L271.5 25.6L257.8 26.2L263.7 27.4L253.5 27.3L263.9 28.2L259.0 28.7L262.0 29.2L255.0 30.1L253.8 31.6L244.9 31.8L255.0 32.9L248.0 34.6L243.7 33.2L226.1 33.8L233.0 32.0L230.0 30.5L238.8 31.6L243.5 30.0L237.8 31.3L236.1 30.2L239.4 29.6L238.0 28.7L231.1 29.6L233.0 28.1L245.6 27.6L239.0 27.5L241.1 27.4L233.8 24.4L248.8 26.0L242.5 24.2L257.8 22.8L253.2 22.6L257.8 21.4L237.1 23.7L233.5 23.4L241.8 22.1L230.7 23.4L226.8 22.7L237.6 21.8L225.9 22.4L231.0 21.2L220.8 20.9L237.4 20.0L233.5 19.5L237.8 18.9L251.4 20.4L243.9 19.0L253.1 18.3L250.3 17.7L260.0 18.7L261.1 18.5L257.2 17.5L276.3 17.5Z","M214.2 45.6L221.1 49.6L217.8 50.8L224.0 51.4L221.9 51.8L224.4 54.3L226.8 51.9L229.9 53.0L229.2 55.1L231.6 57.1L237.8 53.1L236.2 50.4L244.1 50.9L243.1 51.3L246.9 53.1L243.6 53.9L246.8 56.3L246.3 57.3L241.5 59.1L237.2 57.7L240.3 59.5L233.2 58.7L235.1 59.7L231.4 61.7L221.4 60.1L232.4 62.0L229.7 64.5L223.0 66.0L215.8 64.6L223.2 66.7L219.1 68.0L220.2 68.5L218.7 69.6L217.0 69.1L213.1 73.8L212.6 77.3L214.2 79.3L217.1 78.2L218.9 81.7L218.0 82.7L223.5 81.9L236.6 87.3L244.0 87.3L245.4 94.4L248.4 95.6L247.9 97.2L251.6 98.1L250.8 96.6L252.7 97.0L253.9 94.3L250.7 88.3L255.6 86.8L258.7 83.8L257.8 80.6L253.7 78.4L256.8 74.9L254.5 73.0L256.2 71.1L254.7 69.3L265.7 68.8L271.4 72.1L276.3 72.5L275.8 74.8L273.4 74.9L276.6 76.7L274.6 78.1L279.0 78.1L277.4 80.2L284.1 78.0L285.0 78.9L287.4 76.5L286.4 75.6L288.8 74.3L291.5 77.0L290.1 77.4L292.8 78.3L291.2 79.2L293.5 78.8L291.8 80.0L295.1 80.2L293.8 81.3L296.7 82.5L293.8 83.0L299.1 85.5L298.5 87.3L306.5 88.5L299.2 91.8L306.5 89.6L306.7 91.3L310.1 91.3L310.5 93.4L309.2 93.6L310.8 94.5L299.8 99.4L283.8 99.5L275.8 104.5L272.5 103.9L275.6 104.8L264.2 111.2L263.2 112.5L278.0 104.1L286.2 101.8L289.4 103.6L283.2 104.9L288.2 105.7L286.7 107.2L288.6 109.4L297.4 111.8L289.3 113.6L286.3 116.2L284.8 113.7L291.6 111.6L287.8 111.6L288.4 110.1L279.9 114.0L278.1 113.6L274.6 115.6L272.4 119.2L275.1 120.8L271.5 120.5L265.0 123.1L265.1 121.9L264.8 125.5L262.7 127.6L261.2 126.3L262.3 125.0L261.3 125.5L262.4 128.9L260.2 132.1L260.9 130.1L259.1 128.2L260.3 126.2L258.6 126.8L259.1 129.8L256.9 129.0L257.4 127.8L256.7 129.0L259.3 130.3L257.2 129.6L259.3 132.4L256.9 131.7L260.0 132.7L261.2 135.5L260.1 133.4L260.4 134.7L258.2 134.4L260.6 135.4L257.4 136.2L258.9 137.9L248.0 143.9L246.3 147.2L249.9 158.0L248.8 161.9L247.2 162.2L243.2 156.3L243.4 152.8L239.9 149.7L236.7 150.8L236.0 149.3L230.0 149.4L230.0 148.3L224.2 149.3L226.5 149.9L225.7 151.0L227.1 152.5L215.4 150.1L208.4 153.2L205.6 156.4L207.1 159.9L205.4 168.4L210.2 178.0L213.9 179.6L221.2 178.9L224.1 172.5L232.4 171.0L227.8 185.3L237.6 185.0L241.6 186.9L240.3 196.7L244.8 202.7L252.2 201.2L258.0 205.2L257.7 203.6L260.9 201.4L261.9 198.0L271.0 193.9L272.2 194.9L270.1 196.1L271.0 198.4L269.7 200.5L271.0 202.4L272.4 200.7L271.3 197.6L275.5 196.3L275.0 194.6L279.7 198.8L284.4 198.4L287.2 199.8L295.3 198.1L292.7 198.7L293.1 199.9L298.0 201.6L296.7 204.0L299.6 203.5L303.0 205.7L303.3 209.0L305.0 208.0L307.0 211.2L307.6 210.0L314.1 210.2L314.6 211.6L315.4 210.5L322.0 214.8L325.3 222.1L318.3 228.9L322.8 227.3L324.0 230.0L326.7 229.3L325.9 231.6L331.5 226.6L338.4 229.4L338.2 233.0L341.5 230.9L350.1 232.2L357.1 237.3L361.3 237.9L362.9 242.6L361.6 248.1L354.4 257.1L352.9 257.0L352.1 269.3L347.5 280.0L344.9 282.4L338.4 282.6L328.2 288.4L328.0 296.4L319.9 305.3L323.5 301.1L321.8 300.1L318.4 307.8L314.6 311.7L305.4 311.2L303.9 309.3L304.5 306.2L303.7 310.7L307.1 313.4L308.2 317.4L304.6 321.1L294.2 322.0L294.0 327.2L287.3 327.0L287.5 330.3L290.5 330.3L291.0 331.7L287.6 331.7L289.2 332.4L286.9 333.9L285.9 337.5L281.0 340.1L285.4 342.9L284.4 344.6L285.5 344.9L281.3 347.4L280.2 350.0L277.6 350.0L278.9 350.4L276.3 354.0L279.0 355.8L273.0 356.9L271.8 359.7L269.0 358.4L271.9 357.0L267.4 358.1L271.2 356.5L268.2 356.3L267.2 357.7L265.9 357.1L267.2 356.2L265.0 356.6L264.3 355.3L268.7 355.6L268.6 354.3L267.1 353.6L268.5 354.5L266.2 355.1L262.3 351.7L263.4 350.9L265.5 352.3L265.9 351.2L265.1 352.1L263.4 350.5L265.4 349.0L263.5 345.0L266.5 345.4L263.4 344.3L264.7 344.0L264.2 342.0L260.7 341.8L265.1 338.5L264.0 340.5L265.7 339.5L265.4 341.4L265.7 338.7L267.7 338.6L266.5 337.8L268.3 336.5L266.8 335.4L269.2 328.7L265.9 329.4L265.1 327.8L266.9 323.1L265.8 318.4L271.4 306.6L271.2 297.3L274.8 278.7L274.1 271.0L260.2 261.6L253.1 246.5L247.1 240.1L246.7 236.7L250.7 231.4L250.4 230.2L249.3 231.8L247.6 230.5L249.8 223.0L252.8 222.0L257.3 215.2L256.2 214.5L256.6 208.6L253.9 204.8L255.6 204.7L251.4 202.5L248.9 204.5L250.0 206.2L247.9 206.9L247.3 205.3L241.0 203.8L236.9 199.4L237.3 201.0L235.9 200.2L235.6 197.3L230.8 192.7L231.3 191.6L221.6 190.0L214.1 184.3L215.0 185.0L212.7 184.0L208.7 185.9L191.4 179.2L186.3 175.1L187.0 171.3L185.5 168.4L176.5 160.7L176.8 158.7L169.6 152.5L167.4 147.1L162.7 145.2L163.6 149.9L171.1 158.2L173.4 164.1L176.4 166.3L175.0 167.8L169.8 162.9L169.1 159.5L162.5 155.7L164.8 155.8L164.9 153.9L160.8 150.6L156.3 141.8L148.4 138.6L143.8 131.1L146.2 129.9L142.5 130.0L140.7 127.7L138.7 118.0L140.0 109.5L141.9 109.6L139.8 109.3L140.4 107.6L138.2 104.0L143.1 104.7L142.2 106.6L143.7 105.2L142.4 107.2L143.4 107.1L144.4 105.0L142.8 101.5L140.1 101.2L140.3 99.6L138.2 100.1L137.9 97.8L134.8 98.8L130.7 97.1L133.3 95.7L130.4 95.8L131.4 94.1L133.2 94.8L132.5 92.9L129.7 95.5L129.9 92.7L127.1 91.2L130.2 91.8L128.7 90.4L126.1 91.9L124.2 90.7L125.9 89.4L123.9 88.9L126.1 86.3L124.9 87.4L124.9 85.3L123.7 88.1L122.4 84.8L119.7 86.1L121.1 84.5L116.3 82.1L117.0 80.3L114.9 79.8L115.3 78.7L113.3 79.0L111.6 76.5L112.3 79.4L107.5 77.4L109.8 78.9L108.5 79.4L100.5 76.1L102.5 75.4L101.4 75.0L89.6 75.0L88.3 73.3L85.3 73.8L83.6 73.2L84.3 72.2L80.6 72.0L78.6 72.9L80.1 73.8L78.9 75.0L70.1 76.8L72.4 75.6L70.4 75.5L71.7 73.1L77.3 72.8L74.9 72.1L75.9 71.3L67.4 74.3L68.3 75.0L64.6 77.1L66.4 78.1L53.8 84.8L41.7 87.9L56.3 81.2L58.0 77.2L54.5 78.5L53.0 77.6L52.6 79.0L49.1 77.4L44.6 78.4L45.9 77.2L43.9 74.3L45.1 73.3L40.2 75.5L36.6 73.6L41.0 72.7L34.6 70.9L39.0 67.0L47.7 65.8L46.3 63.9L47.8 63.0L34.6 63.5L32.7 62.1L34.6 61.8L29.8 60.9L38.8 58.5L40.9 58.6L40.8 59.8L47.4 59.5L44.1 57.6L49.4 58.9L33.0 54.1L41.2 52.1L45.3 49.2L50.3 49.3L50.8 48.0L58.8 46.5L61.1 47.2L60.1 47.9L92.0 49.7L111.9 53.3L110.2 52.2L126.2 49.7L116.5 52.9L118.2 53.0L127.9 50.6L130.8 49.3L130.0 48.6L135.7 51.6L138.6 49.6L139.2 51.6L145.6 50.5L165.1 54.0L162.2 55.5L174.8 55.0L181.9 59.0L180.1 55.5L185.6 53.5L178.2 54.3L179.1 53.5L184.6 52.7L194.2 55.7L207.1 55.7L203.4 54.1L205.4 53.7L210.1 54.4L209.1 56.2L211.5 57.5L208.9 57.4L210.5 58.5L211.3 54.9L216.4 53.5L213.5 53.0L216.4 51.6L209.9 50.4L208.6 49.2L210.3 48.3L208.7 47.2L214.2 45.6Z","M245.0 67.6L242.5 69.5L240.2 68.9L245.0 67.6Z","M251.1 69.0L250.8 70.9L249.3 70.5L251.1 69.0Z","M211.3 30.5L217.2 30.8L209.3 30.9L211.3 30.5Z","M216.1 37.4L208.5 37.4L212.8 35.9L216.1 37.4Z","M175.5 28.4L176.6 29.1L166.8 29.2L175.5 28.4Z","M154.2 36.1L151.5 36.0L156.2 34.8L154.2 36.1Z","M186.8 42.7L182.6 41.2L188.5 41.1L186.8 42.7Z","M200.0 40.1L207.2 40.5L203.9 42.6L208.6 43.3L208.5 45.4L202.1 46.6L193.2 43.1L199.7 42.7L198.7 42.0L200.4 42.0L196.2 41.3L200.0 40.1Z","M237.7 61.8L249.3 65.5L247.4 66.3L241.7 64.6L236.5 67.2L235.6 65.7L232.1 66.0L234.4 64.7L235.5 60.4L237.7 61.8Z","M260.8 54.2L262.3 54.6L262.0 56.4L256.9 56.2L258.1 54.4L260.8 54.2Z","M251.2 40.9L259.8 42.8L251.2 43.1L247.8 40.8L251.2 40.9Z","M205.7 33.8L205.3 35.6L206.7 36.5L205.0 37.4L198.2 36.6L202.0 35.8L193.0 36.0L197.6 35.5L195.5 33.9L200.3 35.2L197.8 33.8L205.7 33.8Z","M191.4 26.7L200.0 28.2L202.5 30.0L188.7 29.3L187.5 28.7L191.6 28.2L186.0 27.2L191.4 26.7Z","M220.3 22.2L237.4 26.8L229.9 27.5L227.9 29.5L224.9 28.5L226.3 29.6L221.5 29.5L214.6 27.6L221.8 26.6L212.2 26.8L210.7 26.5L214.0 25.7L208.1 24.7L214.3 24.5L209.0 24.2L216.9 22.2L214.6 21.7L220.3 22.2Z","M214.3 32.7L226.8 34.2L221.5 34.4L227.7 36.4L244.6 35.4L250.8 36.4L249.0 37.4L251.5 37.7L221.2 38.4L217.3 34.1L207.8 33.1L214.3 32.7Z","M209.5 28.7L212.7 29.8L207.5 30.5L204.1 28.1L209.5 28.7Z","M173.9 29.7L176.0 29.9L170.1 31.6L166.8 30.5L173.9 29.7Z","M161.1 31.6L156.9 34.3L155.3 33.0L150.2 35.4L142.7 34.7L152.3 31.7L161.1 31.6Z","M179.3 34.9L186.3 35.7L184.8 37.3L168.7 39.0L164.1 38.3L172.4 36.9L156.0 36.8L162.1 35.8L157.1 35.9L162.5 35.3L158.3 35.1L162.5 33.8L177.3 36.2L174.2 34.0L177.9 32.9L179.3 34.9Z","M217.1 39.6L224.1 40.3L219.7 43.1L214.5 43.1L216.1 43.9L212.0 44.9L210.9 40.8L217.1 39.6Z","M206.4 50.9L211.8 52.9L208.5 53.8L201.1 52.4L206.4 50.9Z","M163.7 43.5L171.8 43.2L170.8 44.2L175.0 42.5L180.5 45.9L181.7 45.3L179.4 42.1L183.8 42.0L186.5 43.0L188.7 47.3L197.7 50.5L191.4 50.8L195.5 52.0L192.8 52.9L183.4 51.4L167.5 53.8L165.8 52.0L158.7 51.4L157.0 49.9L170.9 49.2L156.0 48.4L154.1 47.6L161.7 46.3L152.5 45.6L158.6 42.4L164.5 41.8L163.7 43.5Z","M150.7 39.7L156.2 39.4L161.5 41.2L142.9 47.3L135.4 45.1L140.5 40.6L138.3 39.1L150.7 39.7Z","M311.4 96.2L307.9 101.0L309.6 99.7L311.2 100.0L309.6 101.0L311.9 101.2L311.6 102.3L316.0 101.7L314.7 104.0L317.4 103.4L315.3 105.0L317.8 104.7L317.3 108.3L314.6 107.8L314.5 105.4L310.5 107.8L313.0 105.8L301.9 105.9L304.2 103.7L302.1 103.6L305.0 102.5L307.4 97.5L311.4 96.2Z","M489.4 53.6L491.4 53.2L485.6 54.5L490.3 51.8L489.4 53.6Z","M375.1 16.1L385.5 16.8L369.9 17.5L387.2 17.1L396.2 18.5L375.3 19.9L397.2 20.2L392.2 23.1L400.9 20.9L421.4 21.3L399.6 25.0L402.5 27.1L397.2 28.4L395.7 30.7L401.3 30.7L398.3 31.0L404.2 32.7L393.5 33.3L400.3 34.7L401.2 37.0L394.4 37.2L400.0 37.6L401.8 39.1L394.2 39.3L399.1 40.4L398.4 41.3L386.2 40.4L388.1 41.2L381.1 42.2L389.7 41.5L394.9 42.7L394.3 44.7L388.4 42.4L383.4 43.2L388.0 42.7L387.0 44.0L395.1 45.6L393.8 46.5L395.6 46.3L396.2 48.7L391.7 48.9L382.3 45.9L385.8 46.8L377.3 48.9L394.5 49.7L383.8 53.3L372.6 54.8L369.2 53.9L369.6 55.0L363.4 58.9L355.6 61.0L356.8 59.2L354.6 59.0L355.6 59.3L353.7 60.0L354.5 60.7L349.6 61.1L351.1 61.6L347.3 62.4L349.5 63.8L346.0 64.3L348.6 65.7L342.6 68.2L344.6 68.6L344.7 70.4L342.4 73.7L340.2 73.5L342.2 74.8L340.2 75.5L336.6 74.5L338.1 73.3L334.9 73.5L335.3 72.0L329.5 73.1L330.6 72.5L326.8 71.0L327.9 69.8L324.2 68.8L325.5 67.4L324.0 67.9L321.1 65.0L324.3 64.5L320.7 64.5L324.7 63.2L322.6 62.0L323.2 63.0L320.2 64.5L318.7 61.7L322.3 60.6L318.6 61.3L316.5 59.9L321.9 57.8L316.0 59.6L319.0 57.8L315.5 56.5L323.5 56.2L315.7 56.1L317.1 54.5L322.1 54.0L316.5 54.3L317.4 53.5L324.3 52.1L322.3 52.0L324.2 49.9L313.7 48.3L323.3 49.0L320.6 47.5L322.5 47.5L317.2 46.7L320.6 45.8L316.4 46.1L315.9 44.1L315.1 46.4L311.0 46.1L312.9 44.1L311.0 43.9L313.2 42.8L310.8 42.5L311.8 41.7L309.4 39.7L306.9 39.7L309.4 38.7L303.7 35.8L291.8 34.1L279.2 34.8L276.3 34.0L279.7 33.4L272.1 32.3L284.3 31.2L268.0 29.5L285.4 27.1L289.6 24.8L282.0 24.3L296.4 22.2L298.9 20.2L308.5 21.6L301.8 20.0L326.1 20.2L322.5 18.8L324.9 18.8L338.2 20.6L339.2 18.8L336.1 18.1L346.6 18.1L333.8 17.6L375.1 16.1Z","M307.4 383.4L303.0 386.3L294.6 388.3L295.0 390.3L298.6 389.9L297.4 390.8L293.3 390.6L293.4 391.8L290.6 390.7L290.6 392.2L286.2 393.4L285.9 395.3L287.9 395.3L286.4 395.8L287.1 396.5L292.7 396.1L290.6 396.6L295.1 400.3L294.1 400.9L296.2 401.2L295.1 402.3L297.6 403.1L295.1 404.1L297.4 404.6L294.4 405.0L298.2 405.2L296.8 406.5L300.0 407.3L295.0 407.9L298.0 409.3L295.4 410.7L298.2 410.8L289.3 413.2L291.6 413.6L274.5 416.7L256.8 416.8L267.9 419.0L264.9 420.3L248.5 419.4L246.0 419.6L256.4 421.4L249.3 422.1L240.6 420.0L241.9 421.0L240.6 421.2L247.8 423.8L259.5 423.5L258.6 424.8L250.8 425.0L259.0 425.2L262.3 427.2L273.3 426.6L294.1 428.9L284.7 429.9L298.7 430.5L293.2 431.3L297.0 432.5L296.4 433.5L301.2 433.6L315.0 430.5L334.4 429.9L333.7 431.1L335.5 431.2L353.1 427.2L391.1 424.9L359.3 421.5L364.8 418.6L377.7 415.9L404.2 413.6L403.1 413.1L406.4 410.9L413.6 409.8L409.4 409.8L408.9 408.6L421.3 406.0L422.5 404.4L419.1 403.5L422.9 403.9L424.3 402.3L428.4 404.2L430.7 403.9L430.6 402.1L435.2 401.8L434.7 403.3L447.3 403.2L448.6 404.3L472.9 400.5L479.3 401.9L482.7 400.1L497.5 400.5L498.5 402.3L504.3 400.6L507.4 402.0L510.1 401.0L516.2 402.5L531.6 400.0L531.6 397.2L533.7 396.7L538.4 399.2L547.2 400.4L550.5 397.0L566.4 393.2L570.9 395.0L573.0 393.1L571.2 392.6L576.4 393.0L575.8 391.1L584.2 389.6L593.0 391.5L590.4 391.6L590.4 393.2L623.9 394.4L625.0 396.2L622.3 398.4L622.7 399.7L618.2 400.7L623.1 401.1L616.2 407.8L618.3 408.3L628.2 404.1L633.3 399.6L639.1 399.6L647.6 395.4L661.2 392.8L698.4 391.6L706.7 389.7L723.7 392.3L732.7 389.5L739.1 391.9L735.1 393.6L750.9 392.5L747.8 393.4L764.7 390.9L771.1 392.8L776.4 390.5L788.4 390.3L809.3 392.2L811.6 392.9L809.9 394.7L814.9 394.1L817.7 395.9L832.7 397.1L834.8 395.8L849.5 398.8L855.5 402.6L855.1 401.1L856.7 400.8L876.1 403.5L877.1 404.7L875.1 405.3L875.5 406.4L871.1 406.0L874.6 406.8L873.9 407.6L866.1 407.3L869.3 408.5L863.4 409.7L862.0 408.5L863.5 411.4L858.5 411.0L856.0 413.1L852.3 413.3L857.0 414.6L856.1 417.4L861.2 419.9L859.9 420.6L867.6 421.7L854.2 421.3L854.9 422.6L849.7 424.5L851.4 425.0L846.4 426.1L851.6 426.1L851.2 428.4L859.2 430.5L853.2 431.2L861.9 430.9L871.5 432.7L869.1 433.2L870.3 433.4L900.0 435.9L900.0 450.0L0.0 450.0L0.0 435.9L58.9 438.0L14.4 432.0L51.4 433.9L67.5 431.1L63.2 429.9L65.1 429.3L57.4 428.3L58.7 427.9L79.9 427.1L73.6 425.9L79.6 424.4L59.7 421.9L64.3 420.6L54.3 419.9L55.0 417.7L75.7 419.5L79.6 418.7L78.1 417.8L86.2 418.0L83.1 416.3L75.9 415.9L86.4 416.0L84.0 415.2L91.1 413.9L97.8 414.4L96.9 413.9L111.6 411.7L161.9 411.2L163.4 409.8L166.7 411.1L164.7 412.5L174.2 410.9L171.6 413.0L203.6 413.0L192.8 409.5L202.8 409.0L192.7 408.2L192.2 406.8L222.7 408.3L228.1 406.7L229.5 407.0L229.0 408.1L244.5 409.6L249.2 408.5L248.9 407.4L257.9 408.7L257.4 409.6L276.8 407.9L282.9 405.2L278.2 398.6L282.6 397.9L281.5 397.2L283.3 393.9L281.3 392.8L283.8 393.2L283.7 391.7L288.7 389.9L290.6 387.6L307.4 383.4Z","M897.2 47.9L900.0 46.2L900.0 47.5L897.2 47.9Z","M494.9 76.7L496.5 76.7L490.5 78.4L492.3 78.8L490.0 84.4L482.2 86.5L481.2 84.3L482.2 83.5L476.5 75.6L470.4 79.6L464.0 78.4L466.0 76.1L462.9 77.1L463.1 76.1L467.5 73.7L462.9 75.9L464.1 73.3L462.5 72.4L469.0 72.0L463.3 72.2L462.3 70.5L466.8 70.3L462.7 69.9L470.2 68.2L466.8 68.2L468.9 67.3L471.6 67.9L470.4 67.1L471.4 66.0L478.4 65.5L473.9 65.7L482.3 61.7L480.3 61.8L482.0 59.7L485.1 59.3L482.8 59.4L483.0 58.4L489.2 56.2L487.0 55.5L493.9 53.9L491.3 53.7L495.6 51.3L500.8 50.1L500.3 51.6L506.7 49.1L508.4 50.0L511.9 47.5L514.5 48.0L512.6 49.7L520.4 47.4L520.5 49.4L522.1 47.8L527.4 49.1L522.0 49.6L524.2 50.6L530.0 50.1L533.6 51.4L532.9 52.3L539.6 52.0L552.4 55.7L553.0 57.9L546.6 59.8L529.7 57.1L536.7 60.1L536.0 61.5L537.6 63.9L543.6 65.5L545.2 64.8L541.4 63.0L542.2 62.1L549.4 63.6L551.1 63.1L549.5 61.0L555.5 58.7L560.3 60.0L560.5 54.4L558.3 53.3L564.7 53.8L566.7 55.4L562.3 56.5L566.2 58.0L584.5 52.5L586.2 52.5L583.2 54.3L597.6 52.5L599.3 54.1L602.3 52.5L600.4 51.0L602.3 50.4L621.3 54.1L622.9 52.6L617.2 51.1L618.2 48.2L616.6 47.3L620.7 45.8L623.5 42.6L629.0 42.7L632.0 43.3L629.7 46.4L631.8 47.6L631.4 52.6L634.0 53.8L628.8 58.3L622.5 58.0L630.2 59.4L636.9 55.6L636.0 53.9L637.8 52.8L641.1 52.6L643.1 53.8L642.9 55.6L647.3 56.0L644.0 55.6L644.1 52.7L634.4 52.0L633.9 50.5L635.9 48.6L632.7 46.4L637.5 44.6L637.0 43.0L639.0 43.5L638.2 46.4L639.3 46.8L647.5 47.6L640.1 45.2L645.5 45.2L643.5 44.7L646.2 44.0L657.8 45.7L655.4 48.5L657.5 47.8L657.7 49.8L659.3 48.6L657.9 47.2L658.8 45.8L652.1 43.8L651.5 41.1L667.2 40.3L664.5 41.4L666.7 42.2L664.8 41.5L668.9 40.5L664.5 38.4L668.7 37.5L667.5 37.1L685.4 35.1L682.1 35.1L683.1 34.8L696.7 34.4L698.9 35.5L699.6 34.7L697.0 33.8L704.0 33.9L702.3 32.7L710.0 30.7L715.1 31.5L710.5 32.2L718.6 32.7L716.0 33.7L727.8 33.2L734.6 35.2L731.2 35.4L734.3 36.4L732.3 37.5L712.9 43.1L727.2 40.7L724.2 40.5L725.7 40.0L732.6 40.2L734.2 43.4L733.0 43.0L735.2 41.0L756.3 42.8L761.4 40.6L772.8 42.2L771.5 42.8L773.1 43.2L771.0 43.7L773.2 44.8L769.3 44.0L777.6 48.1L781.6 45.2L794.8 47.2L795.6 46.0L800.0 46.3L798.4 45.1L800.5 44.5L797.9 44.2L802.7 43.5L802.0 42.8L817.1 44.3L813.0 45.8L818.2 44.2L823.8 44.6L825.0 45.3L822.3 45.7L831.3 47.9L846.8 47.7L849.8 48.7L849.6 50.5L852.3 51.0L853.4 52.7L852.1 53.7L853.8 51.6L858.0 50.7L869.6 50.7L876.3 52.9L877.5 52.2L875.4 50.9L876.2 49.7L889.8 50.3L900.0 52.5L900.0 62.3L886.4 63.3L895.6 64.1L898.9 68.1L897.8 69.2L892.6 68.1L882.1 71.3L875.9 75.1L873.1 73.5L865.7 75.4L865.9 73.8L859.4 74.9L854.9 79.8L858.1 80.5L856.9 81.9L858.3 84.4L855.2 84.8L855.3 88.1L850.2 89.5L850.1 92.2L846.2 92.4L845.3 95.5L841.9 97.6L838.9 87.0L840.0 83.3L842.1 80.6L859.3 72.7L860.5 69.3L863.5 68.8L858.3 68.6L857.7 71.1L850.4 73.4L850.9 72.4L849.5 72.6L850.8 70.3L842.7 70.8L835.7 75.4L837.9 77.0L828.3 77.8L830.7 76.9L824.1 75.6L821.8 76.9L806.5 76.9L788.2 87.6L792.0 88.4L791.8 90.5L794.2 89.3L793.1 91.1L799.5 89.4L803.4 91.8L802.1 92.3L803.7 94.6L801.3 98.0L800.3 103.9L788.7 115.4L782.9 118.3L779.5 116.9L774.4 120.7L774.3 122.9L768.9 125.5L768.5 127.0L773.5 132.4L773.0 137.0L766.3 139.2L766.9 135.3L765.4 133.1L767.4 132.7L766.6 130.5L761.7 129.7L763.9 128.3L763.4 126.2L760.9 125.0L752.9 128.2L755.7 123.7L754.6 122.6L747.4 127.0L744.5 127.2L744.1 128.9L747.4 129.9L748.2 132.2L751.9 130.4L756.7 131.5L750.5 134.5L747.9 137.9L750.7 139.3L754.6 145.5L750.1 145.2L754.7 147.7L750.5 149.4L755.2 150.3L753.8 151.3L754.9 151.3L754.0 154.3L747.8 159.7L749.1 161.5L741.2 167.6L735.7 169.3L733.8 167.2L733.9 169.4L726.0 171.7L725.9 174.3L724.2 172.7L724.8 171.3L721.5 170.2L716.7 172.5L714.1 177.6L722.1 186.6L723.6 193.5L722.5 196.7L716.5 198.8L716.5 200.4L715.3 199.4L716.4 200.9L714.6 200.0L715.4 201.5L712.8 203.4L712.6 199.8L707.9 197.7L706.5 194.5L702.2 193.4L702.4 191.4L700.0 191.6L698.1 201.8L699.6 201.8L701.1 207.0L708.0 211.8L710.4 221.6L703.2 217.8L700.3 208.9L695.8 204.4L697.2 195.7L694.3 183.6L692.1 181.5L688.5 185.7L686.7 185.2L686.8 183.7L685.6 185.0L686.5 181.1L685.1 176.8L684.8 177.8L683.7 176.6L685.0 176.4L680.8 173.0L679.7 169.1L678.7 167.8L677.4 168.5L676.5 166.0L675.6 170.4L675.0 168.8L673.9 170.6L673.7 169.3L673.4 170.7L672.6 169.8L671.9 171.0L671.6 169.7L670.3 170.9L669.9 169.1L666.9 174.2L663.1 175.6L655.6 183.6L650.7 185.7L649.6 199.2L647.3 201.1L648.5 202.0L646.1 202.2L643.8 204.8L641.4 202.7L633.3 183.9L632.0 169.4L630.5 169.3L630.0 172.1L626.2 172.9L622.4 169.3L626.2 167.3L622.0 167.4L621.9 165.4L618.9 165.3L616.1 161.1L603.5 162.2L594.5 160.9L591.8 157.2L586.6 158.7L579.0 155.3L575.2 149.5L572.5 148.7L570.0 150.0L569.3 151.5L575.4 158.3L577.0 163.0L577.5 160.0L578.9 160.2L578.3 164.1L585.4 164.6L591.0 159.1L591.6 163.8L596.9 166.2L599.6 169.2L594.7 174.4L594.5 177.5L588.7 180.4L587.7 182.4L581.5 183.8L580.5 185.9L571.7 189.9L559.8 193.5L558.1 191.8L555.7 181.4L548.2 172.6L546.2 165.7L536.6 154.8L537.4 151.1L535.6 155.6L531.2 150.2L539.5 165.2L539.2 167.6L542.2 170.0L543.7 177.9L546.4 179.8L548.8 186.2L558.4 194.1L556.3 196.2L562.4 198.9L577.0 195.0L578.5 199.0L569.9 213.8L550.7 231.6L548.1 236.7L547.0 240.2L548.9 242.6L549.3 250.0L551.5 251.7L552.1 262.0L549.6 266.1L536.6 274.3L538.9 280.8L538.6 285.4L532.0 289.1L530.9 296.2L519.7 307.6L513.9 310.1L506.4 310.0L500.1 312.0L495.9 310.5L494.6 307.1L495.5 304.4L487.4 290.8L486.2 281.1L479.4 270.0L479.4 264.6L484.6 252.6L480.7 240.3L482.7 239.7L480.6 239.5L471.8 226.5L473.4 224.1L475.0 224.5L473.3 223.6L474.2 214.9L470.6 212.7L465.2 214.3L463.6 211.0L459.3 208.5L445.0 213.1L442.0 211.6L429.4 213.5L418.8 206.5L415.8 200.2L411.5 197.0L412.3 195.1L410.1 195.5L408.0 193.8L408.1 191.4L411.4 191.3L408.9 191.6L406.2 188.1L408.6 185.7L409.8 181.1L409.5 174.4L407.3 172.9L410.3 165.4L417.6 155.2L424.5 151.5L426.9 143.6L432.7 140.1L435.2 135.5L445.2 137.3L453.1 133.7L474.2 131.6L477.8 132.8L476.2 134.4L477.8 136.9L475.2 139.5L475.8 140.7L487.9 144.0L489.3 146.4L497.3 149.3L500.0 148.0L500.3 144.5L504.1 142.7L522.7 147.9L527.7 146.0L531.5 147.3L536.2 146.0L539.9 138.6L540.5 133.0L532.0 134.9L528.1 132.9L524.2 134.6L518.9 133.3L520.6 132.4L518.2 132.6L518.1 130.1L515.7 129.3L517.9 128.9L515.5 125.0L533.5 120.0L546.0 122.7L553.5 121.4L553.5 118.2L541.6 112.1L544.1 111.6L546.2 109.8L544.4 108.4L548.0 106.8L538.1 108.9L537.6 110.7L541.0 112.3L534.8 114.0L531.3 111.5L534.0 109.8L529.6 109.3L531.4 108.5L529.4 107.0L529.7 108.4L527.0 108.6L524.1 110.7L523.9 112.9L522.3 112.6L521.4 116.2L518.7 118.8L522.4 122.5L518.7 122.6L515.5 124.8L517.0 123.4L511.2 122.6L509.4 123.1L510.9 124.6L509.1 125.2L506.6 123.8L508.3 127.1L506.4 127.8L510.1 129.7L510.0 130.8L508.8 129.9L507.6 130.3L508.7 131.4L506.8 131.1L507.9 133.9L504.7 133.2L502.8 130.3L507.9 129.6L503.0 129.1L502.8 127.4L498.5 124.3L498.9 120.5L490.0 116.2L486.4 111.8L484.7 112.9L484.1 110.6L480.7 111.4L481.0 114.4L486.4 119.4L490.4 120.3L489.8 121.2L496.2 124.4L495.9 125.4L492.3 123.9L491.3 125.6L492.9 127.5L490.1 130.1L489.2 125.0L477.9 119.0L475.5 115.1L471.9 113.9L465.3 117.3L460.1 116.0L458.1 117.0L458.1 120.1L451.8 122.9L449.2 126.2L450.5 128.1L444.7 133.1L439.1 133.2L435.9 134.9L432.8 131.8L427.5 132.4L428.3 128.9L426.9 128.4L428.0 127.3L426.3 128.0L428.3 119.3L427.1 117.1L430.8 115.6L445.0 116.6L447.3 111.2L448.6 112.5L444.8 107.8L445.6 107.0L439.2 105.4L438.2 103.7L446.6 103.4L445.4 100.8L451.0 101.4L454.4 97.7L460.6 96.5L458.6 96.1L460.7 96.3L460.1 95.2L463.8 91.8L474.5 91.1L471.6 89.3L470.3 86.0L470.4 83.5L473.0 83.2L470.7 83.1L471.5 82.2L476.5 80.7L475.7 83.4L477.3 83.9L474.0 86.3L474.7 88.8L478.5 90.1L482.6 89.0L486.5 90.9L484.6 89.7L495.2 87.9L498.5 89.0L502.8 86.0L501.5 87.5L503.0 87.7L502.6 83.4L504.3 81.1L511.0 81.9L511.3 79.1L509.4 79.1L508.7 77.0L525.4 75.1L521.3 73.3L507.6 75.5L503.6 73.5L502.8 68.4L503.9 67.0L513.4 62.5L511.6 60.4L506.0 60.3L503.5 61.7L503.8 63.8L501.9 65.3L493.4 68.8L493.1 73.2L497.5 75.4L494.9 76.7Z M576.7 107.7L568.7 110.8L566.8 113.9L569.1 115.3L569.3 118.3L575.9 124.3L573.9 124.5L572.4 127.3L572.7 130.8L579.4 133.5L584.9 133.0L584.7 127.6L581.8 124.0L582.4 122.4L584.7 123.4L586.8 122.3L584.4 119.7L582.4 120.1L582.1 122.0L581.5 118.1L578.2 117.1L575.6 114.0L578.9 113.7L577.5 112.7L578.5 111.6L583.0 111.7L581.9 111.1L582.9 108.3L576.7 107.7Z"];
@@ -1268,27 +1268,27 @@ const W = 900, H = 450;
 const proj = (lon, lat) => [(lon + 180) / 360 * W, (90 - lat) / 180 * H];
 
 const CITIES = [
-  { id:'hk',  name:'香港',       en:'Hong Kong',     lon:114.17, lat:22.32,  amt:'HK$5,250万', hub:true,  dom:true,  label:true  },
-  { id:'bj',  name:'北京',       en:'Beijing',       lon:116.41, lat:39.90,  amt:'HK$980万', hub:false, dom:true,  label:true  },
-  { id:'ty',  name:'东京',       en:'Tokyo',         lon:139.69, lat:35.68,  amt:'HK$280万',  hub:false, dom:false, label:true  },
-  { id:'db',  name:'迪拜',       en:'Dubai',         lon:55.27,  lat:25.20,  amt:'HK$150万',  hub:false, dom:false, label:false },
-  { id:'ny',  name:'纽约',       en:'New York',      lon:-74.01, lat:40.71,  amt:'HK$390万',  hub:false, dom:false, label:true, dy:-4  },
-  { id:'ld',  name:'伦敦',       en:'London',        lon:-0.13,  lat:51.51,  amt:'HK$320万',  hub:false, dom:false, label:true, dy:-9  },
-  { id:'lx',  name:'卢森堡',     en:'Luxembourg',    lon:6.13,   lat:49.61,  amt:'HK$95万',  hub:false, dom:false, label:true, dy:7   },
+  { id:'hk',  name:'香港',       en:'Hong Kong',     lon:114.17, lat:22.32,  amt:'HK$5,250萬', hub:true,  dom:true,  label:true  },
+  { id:'bj',  name:'北京',       en:'Beijing',       lon:116.41, lat:39.90,  amt:'HK$980萬', hub:false, dom:true,  label:true  },
+  { id:'ty',  name:'東京',       en:'Tokyo',         lon:139.69, lat:35.68,  amt:'HK$280萬',  hub:false, dom:false, label:true  },
+  { id:'db',  name:'迪拜',       en:'Dubai',         lon:55.27,  lat:25.20,  amt:'HK$150萬',  hub:false, dom:false, label:false },
+  { id:'ny',  name:'紐約',       en:'New York',      lon:-74.01, lat:40.71,  amt:'HK$390萬',  hub:false, dom:false, label:true, dy:-4  },
+  { id:'ld',  name:'倫敦',       en:'London',        lon:-0.13,  lat:51.51,  amt:'HK$320萬',  hub:false, dom:false, label:true, dy:-9  },
+  { id:'lx',  name:'盧森堡',     en:'Luxembourg',    lon:6.13,   lat:49.61,  amt:'HK$95萬',  hub:false, dom:false, label:true, dy:7   },
 ];
 
-// 东南亚整体区域（黄色虚线框范围，东经 92°~141°，北纬 23°~南纬 11°）
+// 東南亞整體區域（黃色虛線框範圍，東經 92°~141°，北緯 23°~南緯 11°）
 const SEA_BOX = { lon1: 92, lat1: 23, lon2: 141, lat2: -11 };
 
 const NS = 'http://www.w3.org/2000/svg';
 function el(tag, attrs, parent){ const n = document.createElementNS(NS, tag); for(const k in attrs) n.setAttribute(k, attrs[k]); if(parent) parent.appendChild(n); return n; }
 
 const mapWrap = document.getElementById('mapWrap');
-// 聚焦中国+东南亚：视野裁剪 x:560-880（东经 44°~172°）、y:90-260（北纬 54°~南纬 14°），中国居中放大
+// 聚焦中國+東南亞：視野裁剪 x:560-880（東經 44°~172°）、y:90-260（北緯 54°~南緯 14°），中國居中放大
 const ZX = 255, ZY = 55, ZW = 625, ZH = 280;
-const svg = el('svg', { viewBox:`${ZX} ${ZY} ${ZW} ${ZH}`, 'aria-label':'全球资金网络地图（聚焦亚太）' }, mapWrap);
+const svg = el('svg', { viewBox:`${ZX} ${ZY} ${ZW} ${ZH}`, 'aria-label':'全球資金網絡地圖（聚焦亞太）' }, mapWrap);
 
-// 背景暗光 + 经纬网
+// 背景暗光 + 經緯網
 const defs = el('defs', {}, svg);
 const bgGrad = el('radialGradient', { id:'mapGlow', cx:'735', cy:'169', r:'300', gradientUnits:'userSpaceOnUse' }, defs);
 el('stop', { offset:'0%', 'stop-color':'#E02B3F', 'stop-opacity':'0.12' }, bgGrad);
@@ -1296,40 +1296,40 @@ el('stop', { offset:'55%', 'stop-color':'#E02B3F', 'stop-opacity':'0.035' }, bgG
 el('stop', { offset:'100%', 'stop-color':'#E02B3F', 'stop-opacity':'0' }, bgGrad);
 el('rect', { x:ZX, y:ZY, width:ZW, height:ZH, fill:'url(#mapGlow)' }, svg);
 
-// 经纬网（淡）
+// 經緯網（淡）
 for(let x = 0; x <= W; x += 150) el('line', { x1:x, y1:0, x2:x, y2:H, class:'graticule' }, svg);
 for(let y = 0; y <= H; y += 75)  el('line', { x1:0, y1:y, x2:W, y2:y, class:'graticule' }, svg);
 
-// 大陆轮廓（真实海岸线）
+// 大陸輪廓（真實海岸線）
 const gLand = el('g', { class:'land-group' }, svg);
 LAND_MAIN.forEach(d => {
   el('path', { d, class:'land', 'fill-rule':'evenodd' }, gLand);
 });
 
-// 中国黄色重点标识
+// 中國黃色重點標識
 const gChina = el('g', {}, svg);
 LAND_CHINA.forEach(d => {
   el('path', { d, class:'china', 'fill-rule':'evenodd' }, gChina);
 });
 
-// 东南亚十国：以真实国界描出黄色边界
+// 東南亞十國：以真實國界描出黃色邊界
 const gSea = el('g', {}, svg);
 LAND_ASEAN.forEach(d => {
   el('path', { d, class:'sea-boundary', 'fill-rule':'evenodd' }, gSea);
 });
 {
-  const [lx, ly] = proj(102, 10);   // 泰国湾海面
+  const [lx, ly] = proj(102, 10);   // 泰國灣海面
   const seaLbl = el('text', { x:lx, y:ly, class:'sea-lbl', 'text-anchor':'middle' }, gSea);
-  seaLbl.textContent = '东南亚';
+  seaLbl.textContent = '東南亞';
   seaLbl.setAttribute('style', 'transition:opacity .4s');
 }
 
-// 城市坐标
+// 城市座標
 const pts = {};
 CITIES.forEach(c => { const [x,y] = proj(c.lon, c.lat); c.x = x + (c.dx || 0); c.y = y + (c.dy || 0); pts[c.id] = c; });
 const hk = pts.hk;
 
-// 资金流弧线：香港 → 各中心（向上拱起，模拟大圆航线）
+// 資金流弧線：香港 → 各中心（向上拱起，模擬大圓航線）
 const gArc = el('g', {}, svg);
 CITIES.forEach(c => {
   if(c.hub) return;
@@ -1348,16 +1348,16 @@ CITIES.forEach(c => {
   flow.setAttribute('stroke', '#E02B3F');
 });
 
-// 城市节点
+// 城市節點
 const gNode = el('g', {}, svg);
 const tooltip = document.getElementById('tooltip');
 
 function showTip(c, ev){
   tooltip.innerHTML = `
     <div class="tt"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${c.hub ? '#C8102E' : '#E02B3F'};box-shadow:0 0 8px rgba(224,43,63,.6)"></span>${c.name} · ${c.en}</div>
-    <div class="row"><span>资金池余额</span><b>${c.amt}</b></div>
-    <div class="row"><span>账户状态</span><b style="color:#0ca30c">● 正常</b></div>
-    <div class="row"><span>归集线路</span><b>${c.hub ? '枢纽中心' : '经香港枢纽'}</b></div>`;
+    <div class="row"><span>資金池餘額</span><b>${c.amt}</b></div>
+    <div class="row"><span>賬户狀態</span><b style="color:#0ca30c">● 正常</b></div>
+    <div class="row"><span>歸集線路</span><b>${c.hub ? '樞紐中心' : '經香港樞紐'}</b></div>`;
   tooltip.classList.add('show');
   const r = tooltip.getBoundingClientRect();
   let tx = ev.clientX + 14, ty = ev.clientY + 12;
@@ -1369,7 +1369,7 @@ function showTip(c, ev){
 function hideTip(){ tooltip.classList.remove('show'); }
 
 CITIES.forEach(c => {
-  const isKey = c.hub || c.id === 'bj';   // 香港枢纽 + 北京为重点
+  const isKey = c.hub || c.id === 'bj';   // 香港樞紐 + 北京為重點
   const g = el('g', { class:'map-node ' + (c.hub ? 'hub' : 'global'), transform:`translate(${c.x} ${c.y})` }, gNode);
   el('circle', { r: c.hub ? 15 : (isKey ? 12 : 9), class:'halo' }, g);
   if(c.hub){
@@ -1385,15 +1385,15 @@ CITIES.forEach(c => {
   hit.addEventListener('mouseleave', hideTip);
 });
 
-// 地图文字标注
+// 地圖文字標註
 CITIES.forEach(c => {
   if(!c.label && !c.hub) return;
   const [x, y] = [c.x, c.y];
   if(c.hub){
-    // 香港：中银图标 + 文字标签（跟随节点右侧，不遮挡左上角）
+    // 香港：中銀圖標 + 文字標籤（跟隨節點右側，不遮擋左上角）
     const cg = el('g', { class:'boc-coin' }, svg);
     el('rect', { x:x + 5, y:y - 25, width:21, height:15, rx:3, fill:'#ffffff' }, cg);
-    el('image', { href:'BOCHK图片.jpg', x:x + 6.5, y:y - 23.5, width:18, height:12, preserveAspectRatio:'xMidYMid meet' }, cg);
+    el('image', { href:'BOCHK圖片.jpg', x:x + 6.5, y:y - 23.5, width:18, height:12, preserveAspectRatio:'xMidYMid meet' }, cg);
     const t1 = el('text', { x:x + 26, y:y - 4, class:'hub-tag' }, svg);
     t1.setAttribute('font-size', '12');
     t1.textContent = '香港';
@@ -1403,16 +1403,16 @@ CITIES.forEach(c => {
   }
 });
 
-/* ================= 放大镜：东南亚分行 ================= */
+/* ================= 放大鏡：東南亞分行 ================= */
 const SEA_BRANCHES = [
-  { name:'新加坡分行', en:'Singapore Branch',   lon:103.82, lat:1.35,  amt:'HK$520万', warn:false },
-  { name:'吉隆坡分行', en:'Kuala Lumpur Branch', lon:101.69, lat:3.14, amt:'HK$68万', warn:false },
-  { name:'曼谷分行',   en:'Bangkok Branch',     lon:100.50, lat:13.75, amt:'HK$138万', warn:false },
-  { name:'河内分行',   en:'Hanoi Branch',       lon:105.83, lat:21.03, amt:'HK$32万', warn:false },
-  { name:'马尼拉分行', en:'Manila Branch',      lon:120.98, lat:14.60, amt:'HK$38万', warn:false },
-  { name:'雅加达分行', en:'Jakarta Branch',     lon:106.85, lat:-6.21, amt:'HK$55万', warn:true  },
+  { name:'新加坡分行', en:'Singapore Branch',   lon:103.82, lat:1.35,  amt:'HK$520萬', warn:false },
+  { name:'吉隆坡分行', en:'Kuala Lumpur Branch', lon:101.69, lat:3.14, amt:'HK$68萬', warn:false },
+  { name:'曼谷分行',   en:'Bangkok Branch',     lon:100.50, lat:13.75, amt:'HK$138萬', warn:false },
+  { name:'河內分行',   en:'Hanoi Branch',       lon:105.83, lat:21.03, amt:'HK$32萬', warn:false },
+  { name:'馬尼拉分行', en:'Manila Branch',      lon:120.98, lat:14.60, amt:'HK$38萬', warn:false },
+  { name:'雅加達分行', en:'Jakarta Branch',     lon:106.85, lat:-6.21, amt:'HK$55萬', warn:true  },
 ];
-// 分行节点：仅在放大镜（东南亚视图）时显示；字体按放大比例缩小
+// 分行節點：僅在放大鏡（東南亞視圖）時顯示；字體按放大比例縮小
 const gBr = el('g', { class:'sea-branches' }, svg);
 gBr.setAttribute('opacity', '0');
 gBr.setAttribute('style', 'transition:opacity .45s ease');
@@ -1421,14 +1421,14 @@ SEA_BRANCHES.forEach(c => {
   const g = el('g', { class:'map-node global', transform:`translate(${x} ${y})` }, gBr);
   el('circle', { r:3.4, class:'halo' }, g);
   const core = el('circle', { r:1.9, class:'core' }, g);
-  core.setAttribute('fill', c.warn ? '#C98500' : '#C8102E');   // 预警分行金色，其余品牌红
+  core.setAttribute('fill', c.warn ? '#C98500' : '#C8102E');   // 預警分行金色，其餘品牌紅
   const hit = el('circle', { r:6, fill:'transparent' }, g);
   hit.addEventListener('mousemove', ev => {
     tooltip.innerHTML = `
-      <div class="tt"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#E02B3F;box-shadow:0 0 8px rgba(224,43,63,.9)"></span>中银香港 · ${c.name}</div>
+      <div class="tt"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#E02B3F;box-shadow:0 0 8px rgba(224,43,63,.9)"></span>中銀香港 · ${c.name}</div>
       <div class="row"><span>分行存款</span><b>${c.amt}</b></div>
-      <div class="row"><span>状态</span><b style="color:${c.warn ? '#fab219' : '#0ca30c'}">● ${c.warn ? '余额预警' : '正常'}</b></div>
-      <div class="row"><span>归集线路</span><b>经香港总部归集</b></div>`;
+      <div class="row"><span>狀態</span><b style="color:${c.warn ? '#fab219' : '#0ca30c'}">● ${c.warn ? '餘額預警' : '正常'}</b></div>
+      <div class="row"><span>歸集線路</span><b>經香港總部歸集</b></div>`;
     tooltip.classList.add('show');
     const r = tooltip.getBoundingClientRect();
     let tx = ev.clientX + 14, ty = ev.clientY + 12;
@@ -1437,10 +1437,10 @@ SEA_BRANCHES.forEach(c => {
     tooltip.style.left = tx + 'px'; tooltip.style.top = ty + 'px';
   });
   hit.addEventListener('mouseleave', hideTip);
-  // 分行不显示文字标签，鼠标悬停时通过气泡显示数据
+  // 分行不顯示文字標籤，鼠標懸停時通過氣泡顯示數據
 });
 
-/* ================= 放大镜缩放控制 ================= */
+/* ================= 放大鏡縮放控制 ================= */
 const HOME_VB = { x:ZX, y:ZY, w:ZW, h:ZH };
 const SEA_VB  = { x:672, y:148, w:142, h:114 };
 let zoomRAF = null;
@@ -1479,10 +1479,10 @@ btnReset.addEventListener('click', () => {
   btnReset.classList.add('on');
 });
 
-// 左下角：全球视野小地图
+// 左下角：全球視野小地圖
 const insetBox = document.createElement('div');
 insetBox.className = 'inset';
-insetBox.innerHTML = '<div class="inset-cap">全球视野 · 方框为当前聚焦区域</div>';
+insetBox.innerHTML = '<div class="inset-cap">全球視野 · 方框為當前聚焦區域</div>';
 const isvg = el('svg', { viewBox:`0 0 ${W} ${H}` }, insetBox);
 const ig = el('g', {}, isvg);
 LAND_GLOBE.forEach(d => {
@@ -1492,7 +1492,7 @@ LAND_CHINA.forEach(d => {
   el('path', { d, class:'inset-china', 'fill-rule':'evenodd' }, ig);
 });
 el('rect', { x:ZX, y:ZY, width:ZW, height:ZH, class:'inset-zoom' }, isvg);
-// 小地图上的东南亚区域（黄色填充）
+// 小地圖上的東南亞區域（黃色填充）
 LAND_ASEAN.forEach(d => {
   el('path', { d, class:'inset-asean', 'fill-rule':'evenodd' }, ig);
 });
@@ -1501,13 +1501,13 @@ CITIES.forEach(c => {
 });
 mapWrap.appendChild(insetBox);
 
-/* ================= 银行存款分布（环形饼图） ================= */
+/* ================= 銀行存款分佈（環形餅圖） ================= */
 const PIE = [
-  { n:'BOCHK 中银香港',   v:3290, c:'#E02B3F', logo:'BOCHK图片.jpg' },
+  { n:'BOCHK 中銀香港',   v:3290, c:'#E02B3F', logo:'BOCHK圖片.jpg' },
   { n:'其他（花旗等 11 家）', v:3020, c:'#7a8094' },
-  { n:'HSBC 汇丰银行',    v:1670, c:'#C98500', logo:'hsbc.png' },
-  { n:'Standard Chartered 渣打银行', v:1110, c:'#199e70', logo:'standard-chartered.jpg' },
-  { n:'ICBC Asia 工银亚洲', v:770,  c:'#5A8FD6', logo:'icbc.png' },
+  { n:'HSBC 滙豐銀行',    v:1670, c:'#C98500', logo:'hsbc.png' },
+  { n:'Standard Chartered 渣打銀行', v:1110, c:'#199e70', logo:'standard-chartered.jpg' },
+  { n:'ICBC Asia 工銀亞洲', v:770,  c:'#5A8FD6', logo:'icbc.png' },
 ];
 const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
 (function(){
@@ -1518,10 +1518,10 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
   const NS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(NS, 'svg');
   svg.setAttribute('viewBox', '0 0 220 220');
-  svg.setAttribute('aria-label', '银行存款分布环形图');
+  svg.setAttribute('aria-label', '銀行存款分佈環形圖');
   const cx = 110, cy = 110, rOut = 88, rIn = 56;
   const pt = (r, a) => [cx + r * Math.cos(a * Math.PI / 180), cy + r * Math.sin(a * Math.PI / 180)];
-  const gap = 1.2;   // 扇形间隙
+  const gap = 1.2;   // 扇形間隙
   let a0 = -90;
   PIE.forEach(p => {
     const span = p.v / pieTotal * 360;
@@ -1539,8 +1539,8 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
     seg.addEventListener('mousemove', ev => {
       tooltip.innerHTML = `
         <div class="tt"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${p.c}"></span>${p.n}</div>
-        <div class="row"><span>存款余额</span><b>HK$${(p.v * 10000).toLocaleString()}</b></div>
-        <div class="row"><span>占比</span><b>${(p.v / pieTotal * 100).toFixed(1)}%</b></div>`;
+        <div class="row"><span>存款餘額</span><b>HK$${(p.v * 10000).toLocaleString()}</b></div>
+        <div class="row"><span>佔比</span><b>${(p.v / pieTotal * 100).toFixed(1)}%</b></div>`;
       tooltip.classList.add('show');
       const r = tooltip.getBoundingClientRect();
       let tx = ev.clientX + 14, ty = ev.clientY + 12;
@@ -1550,7 +1550,7 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
     });
     seg.addEventListener('mouseleave', hideTip);
     svg.appendChild(seg);
-    // 大扇形内直接标注占比（选择性标注）
+    // 大扇形內直接標註佔比（選擇性標註）
     const pct = p.v / pieTotal * 100;
     if(pct >= 12){
       const mid = (a0 + a1) / 2;
@@ -1564,7 +1564,7 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
     }
     a0 = a1;
   });
-  // 中心合计
+  // 中心合計
   const c1 = document.createElementNS(NS, 'text');
   c1.setAttribute('x', cx); c1.setAttribute('y', cy - 3);
   c1.setAttribute('class', 'pie-center');
@@ -1572,11 +1572,11 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
   const c2 = document.createElementNS(NS, 'text');
   c2.setAttribute('x', cx); c2.setAttribute('y', cy + 15);
   c2.setAttribute('class', 'pie-center-sub');
-  c2.textContent = '银行存款合计';
+  c2.textContent = '銀行存款合計';
   svg.appendChild(c1); svg.appendChild(c2);
   box.appendChild(svg);
 
-  // 图例 + 明细（表格视图）
+  // 圖例 + 明細（表格視圖）
   const lg = document.createElement('div');
   lg.className = 'pie-legend';
   PIE.forEach(p => {
@@ -1594,16 +1594,16 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
   wrap.appendChild(box);
 })();
 
-/* ================= 单位存款分布 ================= */
+/* ================= 單位存款分佈 ================= */
 const UNITS = [
-  { n:'集团总部',      v:2780 },
-  { n:'华东子公司',    v:1910 },
-  { n:'华南子公司',    v:1510 },
-  { n:'华北子公司',    v:1180 },
-  { n:'电商事业部',    v:980  },
+  { n:'集團總部',      v:2780 },
+  { n:'華東子公司',    v:1910 },
+  { n:'華南子公司',    v:1510 },
+  { n:'華北子公司',    v:1180 },
+  { n:'電商事業部',    v:980  },
   { n:'海外·新加坡',   v:720  },
-  { n:'海外·伦敦',     v:470  },
-  { n:'其他单位',      v:310  },
+  { n:'海外·倫敦',     v:470  },
+  { n:'其他單位',      v:310  },
 ];
 const maxUnit = 2780;
 const ul2 = document.getElementById('unitList');
@@ -1617,18 +1617,18 @@ UNITS.forEach((u, i) => {
   ul2.appendChild(row);
 });
 
-/* ================= 融资构成情况（横向堆叠条） ================= */
+/* ================= 融資構成情況（橫向堆疊條） ================= */
 const FIN = [
-  { n:'银行贷款',     v:3150, c:'#E02B3F' },
-  { n:'债券融资',     v:2100, c:'#F0B429' },
-  { n:'供应链融资',   v:1050, c:'#199e70' },
-  { n:'融资租赁',     v:670,  c:'#9085e9' },
-  { n:'股权融资',     v:530,  c:'#5A8FD6' },
+  { n:'銀行貸款',     v:3150, c:'#E02B3F' },
+  { n:'債券融資',     v:2100, c:'#F0B429' },
+  { n:'供應鏈融資',   v:1050, c:'#199e70' },
+  { n:'融資租賃',     v:670,  c:'#9085e9' },
+  { n:'股權融資',     v:530,  c:'#5A8FD6' },
 ];
 const finTotal = FIN.reduce((s, f) => s + f.v, 0);
 const finWrap = document.getElementById('finWrap');
 
-// 堆叠条
+// 堆疊條
 const stack = document.createElement('div');
 stack.className = 'fin-stack';
 let acc = 0;
@@ -1652,7 +1652,7 @@ FIN.forEach(f => {
 });
 finWrap.appendChild(stack);
 
-// 明细表（表格视图）
+// 明細表（表格視圖）
 const ftbl = document.createElement('div');
 ftbl.className = 'fin-table';
 FIN.forEach(f => {
@@ -1667,9 +1667,9 @@ FIN.forEach(f => {
 });
 finWrap.appendChild(ftbl);
 
-/* ================= 银行图标映射 ================= */
+/* ================= 銀行圖標映射 ================= */
 const BANK_LOGOS = {
-  'BOCHK':'BOCHK图片.jpg',
+  'BOCHK':'BOCHK圖片.jpg',
   'HSBC':'hsbc.png',
   'Standard':'standard-chartered.jpg',
   'ICBC':'icbc.png',
@@ -1685,59 +1685,59 @@ function bankCell(name){
   return src ? `<span class="bk-cell"><img class="lg-logo" src="${src}" alt="">${name}</span>` : name;
 }
 
-/* ================= 账户类页面 ================= */
+/* ================= 賬户類頁面 ================= */
 const ACCS = [
-  { bank:'BOCHK 中银香港', sub:'香港 · 集团主结算行', rows:[
+  { bank:'BOCHK 中銀香港', sub:'香港 · 集團主結算行', rows:[
     ['基本户', 'CNY', '32.1', '28.8', '正常'],
-    ['结算户', 'USD', '11.3', '10.0', '正常'],
-    ['结算户', 'HKD', '81.7', '75.3', '正常'],
-    ['外汇户', 'EUR', '3.2', '2.6', '正常'],
-    ['外汇户', 'JPY', '313', '297', '正常'],
+    ['結算户', 'USD', '11.3', '10.0', '正常'],
+    ['結算户', 'HKD', '81.7', '75.3', '正常'],
+    ['外匯户', 'EUR', '3.2', '2.6', '正常'],
+    ['外匯户', 'JPY', '313', '297', '正常'],
   ]},
-  { bank:'HSBC 汇丰银行', sub:'香港 · 跨境结算行', rows:[
+  { bank:'HSBC 滙豐銀行', sub:'香港 · 跨境結算行', rows:[
     ['基本户', 'CNY', '16.4', '14.5', '正常'],
-    ['结算户', 'USD', '5.8', '5.1', '正常'],
-    ['结算户', 'HKD', '46.4', '42.3', '正常'],
-    ['外汇户', 'EUR', '2.2', '1.8', '正常'],
-    ['外汇户', 'JPY', '219', '203', '正常'],
+    ['結算户', 'USD', '5.8', '5.1', '正常'],
+    ['結算户', 'HKD', '46.4', '42.3', '正常'],
+    ['外匯户', 'EUR', '2.2', '1.8', '正常'],
+    ['外匯户', 'JPY', '219', '203', '正常'],
   ]},
-  { bank:'Standard Chartered 渣打银行', sub:'香港 · 贸易融资行', rows:[
+  { bank:'Standard Chartered 渣打銀行', sub:'香港 · 貿易融資行', rows:[
     ['基本户', 'CNY', '10.9', '10.1', '正常'],
-    ['结算户', 'USD', '3.8', '3.5', '正常'],
-    ['结算户', 'HKD', '31.0', '27.6', '正常'],
-    ['外汇户', 'EUR', '1.5', '1.3', '正常'],
+    ['結算户', 'USD', '3.8', '3.5', '正常'],
+    ['結算户', 'HKD', '31.0', '27.6', '正常'],
+    ['外匯户', 'EUR', '1.5', '1.3', '正常'],
   ]},
-  { bank:'ICBC Asia 工银亚洲', sub:'香港 · 人民币清算行', rows:[
+  { bank:'ICBC Asia 工銀亞洲', sub:'香港 · 人民幣清算行', rows:[
     ['基本户', 'CNY', '7.4', '6.8', '正常'],
-    ['结算户', 'HKD', '22.3', '20.0', '正常'],
-    ['结算户', 'USD', '1.1', '1.0', '正常'],
+    ['結算户', 'HKD', '22.3', '20.0', '正常'],
+    ['結算户', 'USD', '1.1', '1.0', '正常'],
   ]},
-  { bank:'Citi 花旗银行', sub:'纽约 · 美元结算行', rows:[
-    ['结算户', 'USD', '5.7', '5.0', '正常'],
+  { bank:'Citi 花旗銀行', sub:'紐約 · 美元結算行', rows:[
+    ['結算户', 'USD', '5.7', '5.0', '正常'],
     ['基本户', 'CNY', '3.2', '2.9', '正常'],
-    ['外汇户', 'EUR', '1.1', '0.9', '正常'],
-    ['外汇户', 'JPY', '88.5', '80.3', '正常'],
+    ['外匯户', 'EUR', '1.1', '0.9', '正常'],
+    ['外匯户', 'JPY', '88.5', '80.3', '正常'],
   ]},
-  { bank:'DBS 星展银行', sub:'新加坡 · 东南亚资金平台', rows:[
-    ['结算户', 'USD', '2.2', '1.6', '预警'],
+  { bank:'DBS 星展銀行', sub:'新加坡 · 東南亞資金平台', rows:[
+    ['結算户', 'USD', '2.2', '1.6', '預警'],
     ['基本户', 'CNY', '3.6', '3.3', '正常'],
   ]},
-  { bank:'JPMorgan 摩根大通', sub:'纽约 · 美元主账户', rows:[
-    ['结算户', 'USD', '9.0', '8.2', '正常'],
-    ['外汇户', 'EUR', '0.7', '0.6', '正常'],
+  { bank:'JPMorgan 摩根大通', sub:'紐約 · 美元主賬户', rows:[
+    ['結算户', 'USD', '9.0', '8.2', '正常'],
+    ['外匯户', 'EUR', '0.7', '0.6', '正常'],
   ]},
-  { bank:'HSBC UK 汇丰（伦敦）', sub:'伦敦 · 欧洲资金平台', rows:[
-    ['结算户', 'USD', '1.5', '1.3', '正常'],
-    ['外汇户', 'EUR', '0.9', '0.8', '正常'],
+  { bank:'HSBC UK 滙豐（倫敦）', sub:'倫敦 · 歐洲資金平台', rows:[
+    ['結算户', 'USD', '1.5', '1.3', '正常'],
+    ['外匯户', 'EUR', '0.9', '0.8', '正常'],
   ]},
 ];
 (function(){
   const cur = [
-    { cc:'CNY', n:'人民币', v:'73.6',  s:'M · 8 个账户' },
-    { cc:'USD', n:'美元',   v:'40.4',  s:'M · 9 个账户' },
-    { cc:'HKD', n:'港币',   v:'181.4', s:'M · 5 个账户' },
-    { cc:'EUR', n:'欧元',   v:'9.6',   s:'M · 7 个账户' },
-    { cc:'JPY', n:'日元',   v:'620.5', s:'M · 3 个账户' },
+    { cc:'CNY', n:'人民幣', v:'73.6',  s:'M · 8 個賬户' },
+    { cc:'USD', n:'美元',   v:'40.4',  s:'M · 9 個賬户' },
+    { cc:'HKD', n:'港幣',   v:'181.4', s:'M · 5 個賬户' },
+    { cc:'EUR', n:'歐元',   v:'9.6',   s:'M · 7 個賬户' },
+    { cc:'JPY', n:'日元',   v:'620.5', s:'M · 3 個賬户' },
   ];
   document.getElementById('curStrip').innerHTML = cur.map(c => `
     <div class="cur-tile">
@@ -1749,7 +1749,7 @@ const ACCS = [
   let rows = '';
   ACCS.forEach(b => {
     b.rows.forEach((r, i) => {
-      const status = r[4] === '预警' ? '<span class="chip wait"><i></i>预警</span>' : '<span class="chip done"><i></i>正常</span>';
+      const status = r[4] === '預警' ? '<span class="chip wait"><i></i>預警</span>' : '<span class="chip done"><i></i>正常</span>';
       if(i === 0){
         rows += `<tr class="bank-grp">
           <td rowspan="${b.rows.length}"><span class="bk"><img class="bk-logo" src="${bankLogo(b.bank)}" alt=""><span>${b.bank}<span class="sub">${b.sub}</span></span></span></td>`;
@@ -1767,59 +1767,59 @@ const ACCS = [
   });
   document.getElementById('accTbl').innerHTML = `
     <table>
-      <thead><tr><th>银行</th><th>账户类型</th><th>币种</th><th class="num">账户余额</th><th class="num">可用余额</th><th>状态</th></tr></thead>
+      <thead><tr><th>銀行</th><th>賬户類型</th><th>幣種</th><th class="num">賬户餘額</th><th class="num">可用餘額</th><th>狀態</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 })();
 
-/* ================= 存款类页面 ================= */
+/* ================= 存款類頁面 ================= */
 const DEPS = [
-  ['BOCHK 中银香港', '大额存单', '1 年', '3.10%', '2,900', '2026-03-12', '2027-03-12', '存续'],
-  ['BOCHK 中银香港', '定期存款', '6 个月', '2.75%', '1,420', '2026-05-20', '2026-11-20', '存续'],
-  ['HSBC 汇丰银行', '结构性存款', '3 个月', '3.35%', '970', '2026-06-05', '2026-09-05', '存续'],
-  ['Standard Chartered 渣打银行', '定期存款', '1 年', '2.90%', '750', '2026-02-18', '2027-02-18', '存续'],
-  ['ICBC Asia 工银亚洲', '定期存款', '6 个月', '2.65%', '490', '2026-04-08', '2026-10-08', '存续'],
-  ['Citi 花旗银行', '通知存款', '7 天', '2.10%', '320', '2026-06-28', '—', '存续'],
-  ['DBS 星展银行', '定期存款', '3 个月', '2.85%', '240', '2026-06-15', '2026-09-15', '存续'],
-  ['BOCHK 中银香港', '定期存款', '3 个月', '2.60%', '215', '2026-05-30', '2026-08-30', '即将到期'],
-  ['HSBC 汇丰银行', '定期存款', '1 个月', '2.45%', '123', '2026-06-20', '2026-07-20', '即将到期'],
-  ['Standard Chartered 渣打银行', '大额存单', '2 年', '3.20%', '115', '2025-09-10', '2027-09-10', '存续'],
-  ['JPMorgan 摩根大通', '定期存款', '3 个月', '2.55%', '92', '2026-06-25', '2026-09-25', '存续'],
-  ['HSBC UK 汇丰（伦敦）', '定期存款', '6 个月', '2.40%', '69', '2026-05-12', '2026-11-12', '存续'],
+  ['BOCHK 中銀香港', '大額存單', '1 年', '3.10%', '2,900', '2026-03-12', '2027-03-12', '存續'],
+  ['BOCHK 中銀香港', '定期存款', '6 個月', '2.75%', '1,420', '2026-05-20', '2026-11-20', '存續'],
+  ['HSBC 滙豐銀行', '結構性存款', '3 個月', '3.35%', '970', '2026-06-05', '2026-09-05', '存續'],
+  ['Standard Chartered 渣打銀行', '定期存款', '1 年', '2.90%', '750', '2026-02-18', '2027-02-18', '存續'],
+  ['ICBC Asia 工銀亞洲', '定期存款', '6 個月', '2.65%', '490', '2026-04-08', '2026-10-08', '存續'],
+  ['Citi 花旗銀行', '通知存款', '7 天', '2.10%', '320', '2026-06-28', '—', '存續'],
+  ['DBS 星展銀行', '定期存款', '3 個月', '2.85%', '240', '2026-06-15', '2026-09-15', '存續'],
+  ['BOCHK 中銀香港', '定期存款', '3 個月', '2.60%', '215', '2026-05-30', '2026-08-30', '即將到期'],
+  ['HSBC 滙豐銀行', '定期存款', '1 個月', '2.45%', '123', '2026-06-20', '2026-07-20', '即將到期'],
+  ['Standard Chartered 渣打銀行', '大額存單', '2 年', '3.20%', '115', '2025-09-10', '2027-09-10', '存續'],
+  ['JPMorgan 摩根大通', '定期存款', '3 個月', '2.55%', '92', '2026-06-25', '2026-09-25', '存續'],
+  ['HSBC UK 滙豐（倫敦）', '定期存款', '6 個月', '2.40%', '69', '2026-05-12', '2026-11-12', '存續'],
 ];
 (function(){
   const rows = DEPS.map(d => {
-    const st = d[7] === '即将到期' ? '<span class="chip wait"><i></i>即将到期</span>' : '<span class="chip done"><i></i>存续</span>';
-    return `<tr><td>${bankCell(d[0])}</td><td>${d[1]}</td><td>${d[2]}</td><td class="num">${d[3]}</td><td class="num">HK$${d[4]}万</td><td class="num">${d[5]}</td><td class="num">${d[6]}</td><td>${st}</td></tr>`;
+    const st = d[7] === '即將到期' ? '<span class="chip wait"><i></i>即將到期</span>' : '<span class="chip done"><i></i>存續</span>';
+    return `<tr><td>${bankCell(d[0])}</td><td>${d[1]}</td><td>${d[2]}</td><td class="num">${d[3]}</td><td class="num">HK$${d[4]}萬</td><td class="num">${d[5]}</td><td class="num">${d[6]}</td><td>${st}</td></tr>`;
   }).join('');
   document.getElementById('depTbl').innerHTML = `
     <table>
-      <thead><tr><th>银行</th><th>产品类型</th><th>期限</th><th class="num">年利率</th><th class="num">金额</th><th class="num">起息日</th><th class="num">到期日</th><th>状态</th></tr></thead>
+      <thead><tr><th>銀行</th><th>產品類型</th><th>期限</th><th class="num">年利率</th><th class="num">金額</th><th class="num">起息日</th><th class="num">到期日</th><th>狀態</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 })();
 
-/* ================= 结算类页面 ================= */
+/* ================= 結算類頁面 ================= */
 const SETTLE = [
-  ['09:42','T20260706-0842','收款','中银香港 · 大湾区贸易结算','HKD','+HK$96万','已完成'],
-  ['09:15','T20260706-0915','付款','华为技术有限公司','CNY','-HK$65万','处理中'],
-  ['08:56','T20260706-0856','结汇','USD → CNY（花旗）','USD','-US$15万','已完成'],
-  ['08:31','T20260706-0831','收款','东京客户 · 日元结算','JPY','+HK$97万','已完成'],
-  ['08:04','T20260706-0804','付款','法兰克福子公司','EUR','-€9.2万','已完成'],
-  ['昨日 17:30','T20260705-1730','付款','新加坡分公司 · 运营周转','SGD','-S$14万','待审批'],
-  ['昨日 16:42','T20260705-1642','收款','伦敦客户 · 汇丰（伦敦）','GBP','+£2.7万','已完成'],
-  ['昨日 15:08','T20260705-1508','投资','国债逆回购（7 天）','CNY','-HK$231万','已完成'],
-  ['昨日 14:35','T20260705-1435','购汇','CNY → USD（BOCHK）','USD','-US$27万','已完成'],
-  ['昨日 11:24','T20260705-1124','付款','深圳物流供应商','CNY','-HK$5.2万','已失败'],
-  ['昨日 10:52','T20260705-1052','收款','迪拜客户 · 美元收款','USD','+US$14万','已完成'],
-  ['昨日 09:36','T20260705-0936','付款','香港仓储服务','HKD','-HK$40万','已完成'],
+  ['09:42','T20260706-0842','收款','中銀香港 · 大灣區貿易結算','HKD','+HK$96萬','已完成'],
+  ['09:15','T20260706-0915','付款','華為技術有限公司','CNY','-HK$65萬','處理中'],
+  ['08:56','T20260706-0856','結匯','USD → CNY（花旗）','USD','-US$15萬','已完成'],
+  ['08:31','T20260706-0831','收款','東京客户 · 日元結算','JPY','+HK$97萬','已完成'],
+  ['08:04','T20260706-0804','付款','法蘭克福子公司','EUR','-€9.2萬','已完成'],
+  ['昨日 17:30','T20260705-1730','付款','新加坡分公司 · 運營週轉','SGD','-S$14萬','待審批'],
+  ['昨日 16:42','T20260705-1642','收款','倫敦客户 · 滙豐（倫敦）','GBP','+£2.7萬','已完成'],
+  ['昨日 15:08','T20260705-1508','投資','國債逆回購（7 天）','CNY','-HK$231萬','已完成'],
+  ['昨日 14:35','T20260705-1435','購匯','CNY → USD（BOCHK）','USD','-US$27萬','已完成'],
+  ['昨日 11:24','T20260705-1124','付款','深圳物流供應商','CNY','-HK$5.2萬','已失敗'],
+  ['昨日 10:52','T20260705-1052','收款','迪拜客户 · 美元收款','USD','+US$14萬','已完成'],
+  ['昨日 09:36','T20260705-0936','付款','香港倉儲服務','HKD','-HK$40萬','已完成'],
 ];
 (function(){
   const chips = {
     '已完成':'<span class="chip done"><i></i>已完成</span>',
-    '处理中':'<span class="chip proc"><i></i>处理中</span>',
-    '待审批':'<span class="chip wait"><i></i>待审批</span>',
-    '已失败':'<span class="chip fail"><i></i>已失败</span>',
+    '處理中':'<span class="chip proc"><i></i>處理中</span>',
+    '待審批':'<span class="chip wait"><i></i>待審批</span>',
+    '已失敗':'<span class="chip fail"><i></i>已失敗</span>',
   };
   const rows = SETTLE.map(s => {
     const cls = s[5].startsWith('+') ? 'amt-in' : 'amt-out';
@@ -1827,38 +1827,38 @@ const SETTLE = [
   }).join('');
   document.getElementById('setTbl').innerHTML = `
     <table>
-      <thead><tr><th>时间</th><th>流水号</th><th>类型</th><th>对手方</th><th>币种</th><th class="num">金额</th><th>状态</th></tr></thead>
+      <thead><tr><th>時間</th><th>流水號</th><th>類型</th><th>對手方</th><th>幣種</th><th class="num">金額</th><th>狀態</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 })();
 
-/* ================= 融资类页面 ================= */
+/* ================= 融資類頁面 ================= */
 const FINS = [
-  ['BOCHK 中银香港', '流动资金贷款', '1,610', '3.35%', '1 年', '2027-03-31', '存续'],
-  ['HSBC 汇丰银行', '银团贷款', '1,120', '3.62%', '3 年', '2028-06-30', '存续'],
-  ['BOCHK 中银香港', '债券融资', '2,110', '3.05%', '5 年', '2030-05-15', '存续'],
-  ['Standard Chartered 渣打银行', '供应链融资', '750', '3.20%', '6 个月', '2026-12-20', '存续'],
-  ['ICBC Asia 工银亚洲', '供应链融资', '310', '3.10%', '6 个月', '2026-11-08', '存续'],
-  ['Citi 花旗银行', '流动资金贷款', '520', '3.85%', '1 年', '2027-01-15', '存续'],
-  ['DBS 星展银行', '融资租赁', '680', '3.50%', '2 年', '2028-02-28', '存续'],
-  ['JPMorgan 摩根大通', '流动资金贷款', '350', '3.72%', '1 年', '2027-04-10', '存续'],
-  ['股权投资者', '股权融资', '530', '—', '长期', '—', '存续'],
-  ['HSBC 汇丰银行', '流动资金贷款', '250', '3.45%', '1 年', '2027-02-14', '存续'],
-  ['Standard Chartered 渣打银行', '债券融资', '410', '3.28%', '3 年', '2028-09-30', '存续'],
-  ['BOCHK 中银香港', '流动资金贷款', '220', '3.40%', '6 个月', '2026-10-31', '即将到期'],
+  ['BOCHK 中銀香港', '流動資金貸款', '1,610', '3.35%', '1 年', '2027-03-31', '存續'],
+  ['HSBC 滙豐銀行', '銀團貸款', '1,120', '3.62%', '3 年', '2028-06-30', '存續'],
+  ['BOCHK 中銀香港', '債券融資', '2,110', '3.05%', '5 年', '2030-05-15', '存續'],
+  ['Standard Chartered 渣打銀行', '供應鏈融資', '750', '3.20%', '6 個月', '2026-12-20', '存續'],
+  ['ICBC Asia 工銀亞洲', '供應鏈融資', '310', '3.10%', '6 個月', '2026-11-08', '存續'],
+  ['Citi 花旗銀行', '流動資金貸款', '520', '3.85%', '1 年', '2027-01-15', '存續'],
+  ['DBS 星展銀行', '融資租賃', '680', '3.50%', '2 年', '2028-02-28', '存續'],
+  ['JPMorgan 摩根大通', '流動資金貸款', '350', '3.72%', '1 年', '2027-04-10', '存續'],
+  ['股權投資者', '股權融資', '530', '—', '長期', '—', '存續'],
+  ['HSBC 滙豐銀行', '流動資金貸款', '250', '3.45%', '1 年', '2027-02-14', '存續'],
+  ['Standard Chartered 渣打銀行', '債券融資', '410', '3.28%', '3 年', '2028-09-30', '存續'],
+  ['BOCHK 中銀香港', '流動資金貸款', '220', '3.40%', '6 個月', '2026-10-31', '即將到期'],
 ];
 (function(){
   const rows = FINS.map(f => {
-    const st = f[6] === '即将到期' ? '<span class="chip wait"><i></i>即将到期</span>' : '<span class="chip done"><i></i>存续</span>';
-    return `<tr><td>${bankCell(f[0])}</td><td>${f[1]}</td><td class="num">HK$${f[2]}万</td><td class="num">${f[3]}</td><td>${f[4]}</td><td class="num">${f[5]}</td><td>${st}</td></tr>`;
+    const st = f[6] === '即將到期' ? '<span class="chip wait"><i></i>即將到期</span>' : '<span class="chip done"><i></i>存續</span>';
+    return `<tr><td>${bankCell(f[0])}</td><td>${f[1]}</td><td class="num">HK$${f[2]}萬</td><td class="num">${f[3]}</td><td>${f[4]}</td><td class="num">${f[5]}</td><td>${st}</td></tr>`;
   }).join('');
   document.getElementById('finTbl').innerHTML = `
     <table>
-      <thead><tr><th>银行 / 机构</th><th>融资类型</th><th class="num">金额</th><th class="num">利率</th><th>期限</th><th class="num">到期日</th><th>状态</th></tr></thead>
+      <thead><tr><th>銀行 / 機構</th><th>融資類型</th><th class="num">金額</th><th class="num">利率</th><th>期限</th><th class="num">到期日</th><th>狀態</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 
-  // 融资页的构成图（复用 FIN 数据）
+  // 融資頁的構成圖（複用 FIN 數據）
   const fw2 = document.getElementById('finWrap2');
   const stack2 = document.createElement('div');
   stack2.className = 'fin-stack';
@@ -1868,7 +1868,7 @@ const FINS = [
     seg.className = 'seg';
     seg.style.width = pct + '%';
     seg.style.background = f.c;
-    seg.title = `${f.n} HK$${f.v.toFixed(1)}亿 (${pct.toFixed(0)}%)`;
+    seg.title = `${f.n} HK$${f.v.toFixed(1)}億 (${pct.toFixed(0)}%)`;
     if(pct >= 20){
       const lbl = document.createElement('span');
       lbl.className = 'lbl-in';
@@ -1888,7 +1888,7 @@ const FINS = [
     row.innerHTML = `
       <span class="sw" style="background:${f.c}"></span>
       <span class="n">${f.n}</span>
-      <span class="amt">HK$${f.v.toFixed(1)}亿</span>
+      <span class="amt">HK$${f.v.toFixed(1)}億</span>
       <span class="pct">${(f.v / finTotal * 100).toFixed(0)}%</span>`;
     ftbl2.appendChild(row);
   });
