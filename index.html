@@ -230,7 +230,7 @@ body::before{
 }
 .sf-card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(23,32,58,.12)}
 .sf-card .ct{font-size:12.5px;font-weight:600;color:var(--ink)}
-.sf-card .amt{font-size:16px;font-weight:800;color:#C8102E;font-variant-numeric:tabular-nums}
+.sf-card .amt{font-size:12.5px;font-weight:800;color:#C8102E;font-variant-numeric:tabular-nums}
 .sf-card::before{
   content:"";position:absolute;left:-22px;top:50%;width:22px;height:2px;
   background:repeating-linear-gradient(90deg,#C8102E 0 6px,transparent 6px 12px);
@@ -253,7 +253,7 @@ body::before{
   border-radius:9px;padding:8px 10px;
 }
 .flow-strip .k{display:block;font-size:10px;color:var(--muted);margin-bottom:3px}
-.flow-strip .v{font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums}
+.flow-strip .v{font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
 .flow-strip .v.up{color:var(--good)}
 .flow-strip .v.down{color:var(--crit)}
 
@@ -401,11 +401,11 @@ body::before{
 
 /* ================= 左列：存款分布 ================= */
 .bar-list{display:flex;flex-direction:column;gap:10px;padding:2px 0}
-.bar-row{display:grid;grid-template-columns:104px 1fr 58px;align-items:center;gap:9px}
+.bar-row{display:grid;grid-template-columns:86px 1fr 108px;align-items:center;gap:8px}
 .bar-row .bn{font-size:11.5px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bar-row .track{height:11px;background:var(--surface-2);border-radius:2px;overflow:hidden}
 .bar-row .fill{height:100%;border-radius:2px;background:var(--blue);transition:width .6s ease}
-.bar-row .val{font-size:11.5px;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
+.bar-row .val{font-size:10.5px;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
 .bar-row.total .bn{color:var(--ink);font-weight:600}
 .bar-row.total .track{background:transparent;border-top:1px solid var(--axis)}
 .bar-row.total .fill{background:linear-gradient(90deg,#C8102E,#E0566A)}
@@ -422,7 +422,7 @@ body::before{
 .pie-legend .row:last-child{border-bottom:none}
 .pie-legend .sw{width:9px;height:9px;border-radius:2.5px;flex-shrink:0}
 .pie-legend .n{color:var(--ink-2);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.pie-legend .amt{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:500;white-space:nowrap}
+.pie-legend .amt{font-size:10.5px;font-variant-numeric:tabular-nums;color:var(--ink);font-weight:500;white-space:nowrap}
 .pie-legend .pct{font-variant-numeric:tabular-nums;color:var(--muted);width:36px;text-align:right;white-space:nowrap}
 
 /* ================= 收入支出柱状图 ================= */
@@ -758,8 +758,8 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">All Accounts</div>
-          <h2>全体系账户</h2>
-          <div class="sub">8 家银行 · 27 个账户 · 5 种币种</div>
+          <h2>全球账户总览</h2>
+          <div class="sub">多银行、多账户、多币种、跨行可视</div>
         </div>
       </div>
       <div class="acc-stats">
@@ -800,7 +800,7 @@ td .sub{color:var(--muted);font-size:10px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
           总收入
         </div>
-        <div class="val">HK$1.86<span class="unit">亿</span></div>
+        <div class="val" style="font-size:21px">HK$186,000,000</div>
         <div class="delta"><span class="chg up">▲ +8.4%</span><span class="vs">较上月</span></div>
       </div>
       <div class="tile">
@@ -808,7 +808,7 @@ td .sub{color:var(--muted);font-size:10px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 14h.01M12 14h4"/></svg>
           总余额
         </div>
-        <div class="val">HK$9,860<span class="unit">万</span></div>
+        <div class="val" style="font-size:21px">HK$98,600,000</div>
         <div class="delta"><span class="chg up">▲ +2.4%</span><span class="vs">较上月</span></div>
       </div>
       <div class="tile">
@@ -816,7 +816,7 @@ td .sub{color:var(--muted);font-size:10px}
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
           总支出
         </div>
-        <div class="val">HK$1.35<span class="unit">亿</span></div>
+        <div class="val" style="font-size:21px">HK$135,000,000</div>
         <div class="delta"><span class="chg down">▼ -3.1%</span><span class="vs">较上月</span></div>
       </div>
     </div>
@@ -826,7 +826,7 @@ td .sub{color:var(--muted);font-size:10px}
       <div class="panel-hd">
         <div>
           <div class="kicker">Global Cash Network</div>
-          <h2>全球资金网络</h2>
+          <h2>全球资金动态概览</h2>
           <div class="sub">中国大陆与东南亚以黄色描出边界 · 香港为资金枢纽</div>
         </div>
         <div class="map-zoom">
@@ -850,9 +850,9 @@ td .sub{color:var(--muted);font-size:10px}
     <div class="panel featured">
       <div class="panel-hd">
         <div>
-          <div class="kicker">Cross-bank Sweep</div>
-          <h2>跨行归集</h2>
-          <div class="sub">香港总部统一调度 · 每日自动归集 · 覆盖全球资金中心</div>
+          <div class="kicker">Global Liquidity Management</div>
+          <h2>全球资金池流动性管理</h2>
+          <div class="sub">一点接入，自动化处理，灵活调度</div>
         </div>
         <span style="font-size:11px;color:var(--muted);margin-top:2px">T+0 自动归集</span>
       </div>
@@ -860,7 +860,7 @@ td .sub{color:var(--muted);font-size:10px}
         <div class="sweep-stats">
           <div class="sweep-stat">
             <span class="k">今日归集</span>
-            <span class="v">HK$620万</span>
+            <span class="v">HK$6,200,000</span>
           </div>
           <div class="sweep-stat">
             <span class="k">执行率</span>
@@ -868,11 +868,11 @@ td .sub{color:var(--muted);font-size:10px}
           </div>
           <div class="sweep-stat">
             <span class="k">在途资金</span>
-            <span class="v">HK$85万</span>
+            <span class="v">HK$850,000</span>
           </div>
           <div class="sweep-stat">
             <span class="k">本年累计归集</span>
-            <span class="v">HK$9.2亿</span>
+            <span class="v">HK$920,000,000</span>
           </div>
         </div>
         <div class="sweep-flow">
@@ -880,15 +880,15 @@ td .sub{color:var(--muted);font-size:10px}
             <span class="sf-ico">HK</span>
             <img class="hub-logo" src="BOCHK图片.jpg" alt="BOCHK">
             <b>香港总部</b>
-            <small>资金池 HK$9,860万</small>
+            <small>资金池 HK$98,600,000</small>
             <small class="sf-pool">中银香港主账户</small>
           </div>
           <div class="sf-targets">
-            <div class="sf-card"><span class="ct">北京</span><span class="amt">HK$180万</span><span class="chip done"><i></i>已完成</span></div>
-            <div class="sf-card"><span class="ct">新加坡</span><span class="amt">HK$140万</span><span class="chip proc"><i></i>在途</span></div>
-            <div class="sf-card"><span class="ct">东京</span><span class="amt">HK$70万</span><span class="chip done"><i></i>已完成</span></div>
-            <div class="sf-card"><span class="ct">伦敦</span><span class="amt">HK$55万</span><span class="chip done"><i></i>已完成</span></div>
-            <div class="sf-card"><span class="ct">迪拜</span><span class="amt">HK$40万</span><span class="chip wait"><i></i>待归集</span></div>
+            <div class="sf-card"><span class="ct">北京</span><span class="amt">HK$1,800,000</span><span class="chip done"><i></i>已完成</span></div>
+            <div class="sf-card"><span class="ct">新加坡</span><span class="amt">HK$1,400,000</span><span class="chip proc"><i></i>在途</span></div>
+            <div class="sf-card"><span class="ct">东京</span><span class="amt">HK$700,000</span><span class="chip done"><i></i>已完成</span></div>
+            <div class="sf-card"><span class="ct">伦敦</span><span class="amt">HK$550,000</span><span class="chip done"><i></i>已完成</span></div>
+            <div class="sf-card"><span class="ct">迪拜</span><span class="amt">HK$400,000</span><span class="chip wait"><i></i>待归集</span></div>
           </div>
         </div>
       </div>
@@ -909,13 +909,13 @@ td .sub{color:var(--muted);font-size:10px}
             <tr><th>时间</th><th>流水号</th><th>类型</th><th>对手方</th><th>币种</th><th class="num">金额</th><th>状态</th></tr>
           </thead>
           <tbody>
-            <tr><td>09:42</td><td class="num" style="color:var(--muted)">T20260706-0842</td><td>收款</td><td>中银香港 · 大湾区贸易结算</td><td>HKD</td><td class="num amt-in">+HK$125万</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>09:15</td><td class="num" style="color:var(--muted)">T20260706-0915</td><td>付款</td><td>华为技术有限公司</td><td>CNY</td><td class="num amt-out">-HK$85万</td><td><span class="chip proc"><i></i>处理中</span></td></tr>
-            <tr><td>08:56</td><td class="num" style="color:var(--muted)">T20260706-0856</td><td>结汇</td><td>美元 → 人民币（花旗）</td><td>USD</td><td class="num amt-out">-US$20万</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>昨日 17:30</td><td class="num" style="color:var(--muted)">T20260705-1730</td><td>付款</td><td>新加坡分公司 · 运营周转</td><td>SGD</td><td class="num amt-out">-S$18.5万</td><td><span class="chip wait"><i></i>待审批</span></td></tr>
-            <tr><td>昨日 16:42</td><td class="num" style="color:var(--muted)">T20260705-1642</td><td>收款</td><td>伦敦客户 · 汇丰（伦敦）</td><td>GBP</td><td class="num amt-in">+£3.6万</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>昨日 15:08</td><td class="num" style="color:var(--muted)">T20260705-1508</td><td>投资</td><td>国债逆回购（7 天）</td><td>CNY</td><td class="num amt-out">-HK$300万</td><td><span class="chip done"><i></i>已完成</span></td></tr>
-            <tr><td>昨日 11:24</td><td class="num" style="color:var(--muted)">T20260705-1124</td><td>付款</td><td>深圳物流供应商</td><td>CNY</td><td class="num amt-out">-HK$6.8万</td><td><span class="chip fail"><i></i>已失败</span></td></tr>
+            <tr><td>09:42</td><td class="num" style="color:var(--muted)">T20260706-0842</td><td>收款</td><td>中银香港 · 大湾区贸易结算</td><td>HKD</td><td class="num amt-in">+HK$1,250,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>09:15</td><td class="num" style="color:var(--muted)">T20260706-0915</td><td>付款</td><td>华为技术有限公司</td><td>CNY</td><td class="num amt-out">-HK$850,000</td><td><span class="chip proc"><i></i>处理中</span></td></tr>
+            <tr><td>08:56</td><td class="num" style="color:var(--muted)">T20260706-0856</td><td>结汇</td><td>美元 → 人民币（花旗）</td><td>USD</td><td class="num amt-out">-US$200,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>昨日 17:30</td><td class="num" style="color:var(--muted)">T20260705-1730</td><td>付款</td><td>新加坡分公司 · 运营周转</td><td>SGD</td><td class="num amt-out">-S$185,000</td><td><span class="chip wait"><i></i>待审批</span></td></tr>
+            <tr><td>昨日 16:42</td><td class="num" style="color:var(--muted)">T20260705-1642</td><td>收款</td><td>伦敦客户 · 汇丰（伦敦）</td><td>GBP</td><td class="num amt-in">+£36,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>昨日 15:08</td><td class="num" style="color:var(--muted)">T20260705-1508</td><td>投资</td><td>国债逆回购（7 天）</td><td>CNY</td><td class="num amt-out">-HK$3,000,000</td><td><span class="chip done"><i></i>已完成</span></td></tr>
+            <tr><td>昨日 11:24</td><td class="num" style="color:var(--muted)">T20260705-1124</td><td>付款</td><td>深圳物流供应商</td><td>CNY</td><td class="num amt-out">-HK$68,000</td><td><span class="chip fail"><i></i>已失败</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -931,20 +931,20 @@ td .sub{color:var(--muted);font-size:10px}
     <div class="panel featured">
       <div class="panel-hd">
         <div>
-          <div class="kicker">Funds Monitor</div>
-          <h2>资金监控</h2>
-          <div class="sub">今日资金流向与风险预警</div>
+          <div class="kicker">Global Transaction Monitoring</div>
+          <h2>全球交易监控</h2>
+          <div class="sub">实时预警、敞口管理、风险可控</div>
         </div>
         <span style="font-size:11px;color:var(--muted);margin-top:2px">4 条待处理</span>
       </div>
       <div class="flow-strip">
-        <div class="fs"><span class="k">今日流入</span><span class="v up">+HK$1,280万</span></div>
-        <div class="fs"><span class="k">今日流出</span><span class="v down">-HK$990万</span></div>
-        <div class="fs"><span class="k">净额</span><span class="v up">+HK$290万</span></div>
+        <div class="fs"><span class="k">今日流入</span><span class="v up">+HK$12,800,000</span></div>
+        <div class="fs"><span class="k">今日流出</span><span class="v down">-HK$9,900,000</span></div>
+        <div class="fs"><span class="k">净额</span><span class="v up">+HK$2,900,000</span></div>
       </div>
       <div class="expo-strip">
         <span class="t">净外汇敞口</span>
-        <span class="v">US$120万 <small>占总额 8.6%</small></span>
+        <span class="v" style="font-size:12.5px">US$1,200,000 <small>占总额 8.6%</small></span>
       </div>
       <div class="panel-bd" style="padding-top:6px">
         <div class="alert-list">
@@ -952,7 +952,7 @@ td .sub{color:var(--muted);font-size:10px}
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg></div>
             <div>
               <div class="ttl">大额付款待审批 <span class="tag">高</span></div>
-              <div class="dsc">应付账款 HK$980万 今日到期，超审批权限，需双签复核</div>
+              <div class="dsc">应付账款 HK$9,800,000 今日到期，超审批权限，需双签复核</div>
               <div class="time">10 分钟前</div>
             </div>
           </div>
@@ -976,7 +976,7 @@ td .sub{color:var(--muted);font-size:10px}
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2.5 20h19L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg></div>
             <div>
               <div class="ttl">账户余额低于最低水位 <span class="tag">中</span></div>
-              <div class="dsc">新加坡星展银行账户余额 S$65万，低于最低水位 S$80万</div>
+              <div class="dsc">新加坡星展银行账户余额 S$650,000，低于最低水位 S$800,000</div>
               <div class="time">2 小时前</div>
             </div>
           </div>
@@ -989,7 +989,7 @@ td .sub{color:var(--muted);font-size:10px}
         <div>
           <div class="kicker">Financing Mix</div>
           <h2>融资构成情况</h2>
-          <div class="sub">融资余额合计 HK$7,500万</div>
+          <div class="sub">融资余额合计 HK$75,000,000</div>
         </div>
       </div>
       <div class="panel-bd" id="finWrap"></div>
@@ -1539,7 +1539,7 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
     seg.addEventListener('mousemove', ev => {
       tooltip.innerHTML = `
         <div class="tt"><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:${p.c}"></span>${p.n}</div>
-        <div class="row"><span>存款余额</span><b>HK$${p.v.toLocaleString()}万</b></div>
+        <div class="row"><span>存款余额</span><b>HK$${(p.v * 10000).toLocaleString()}</b></div>
         <div class="row"><span>占比</span><b>${(p.v / pieTotal * 100).toFixed(1)}%</b></div>`;
       tooltip.classList.add('show');
       const r = tooltip.getBoundingClientRect();
@@ -1568,7 +1568,7 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
   const c1 = document.createElementNS(NS, 'text');
   c1.setAttribute('x', cx); c1.setAttribute('y', cy - 3);
   c1.setAttribute('class', 'pie-center');
-  c1.textContent = 'HK$' + pieTotal.toLocaleString() + '万';
+  c1.textContent = 'HK$' + (pieTotal * 10000).toLocaleString();
   const c2 = document.createElementNS(NS, 'text');
   c2.setAttribute('x', cx); c2.setAttribute('y', cy + 15);
   c2.setAttribute('class', 'pie-center-sub');
@@ -1586,7 +1586,7 @@ const pieTotal = PIE.reduce((s, p) => s + p.v, 0);
       <span class="sw" style="background:${p.c}"></span>
       ${p.logo ? `<img class="lg-logo" src="${p.logo}" alt="">` : ''}
       <span class="n">${p.n}</span>
-      <span class="amt">HK$${p.v.toLocaleString()}万</span>
+      <span class="amt">HK$${(p.v * 10000).toLocaleString()}</span>
       <span class="pct">${(p.v / pieTotal * 100).toFixed(1)}%</span>`;
     lg.appendChild(row);
   });
@@ -1613,7 +1613,7 @@ UNITS.forEach((u, i) => {
   row.innerHTML = `
     <span class="bn">${u.n}</span>
     <div class="track"><div class="fill" style="width:${(u.v / maxUnit * 100).toFixed(1)}%"></div></div>
-    <span class="val">HK$${u.v.toLocaleString()}万</span>`;
+    <span class="val">HK$${(u.v * 10000).toLocaleString()}</span>`;
   ul2.appendChild(row);
 });
 
@@ -1638,7 +1638,7 @@ FIN.forEach(f => {
   seg.className = 'seg';
   seg.style.width = pct + '%';
   seg.style.background = f.c;
-  seg.title = `${f.n} HK$${f.v.toLocaleString()}万 (${pct.toFixed(0)}%)`;
+  seg.title = `${f.n} HK$${(f.v * 10000).toLocaleString()} (${pct.toFixed(0)}%)`;
   if(pct >= 20){
     const lbl = document.createElement('span');
     lbl.className = 'lbl-in';
@@ -1661,7 +1661,7 @@ FIN.forEach(f => {
   row.innerHTML = `
     <span class="sw" style="background:${f.c}"></span>
     <span class="n">${f.n}</span>
-    <span class="amt">HK$${f.v.toLocaleString()}万</span>
+    <span class="amt">HK$${(f.v * 10000).toLocaleString()}</span>
     <span class="pct">${(f.v / finTotal * 100).toFixed(0)}%</span>`;
   ftbl.appendChild(row);
 });
